@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-cloak</title>
+  <style>
+    [v-cloak] {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div id="app" v-cloak>
+  <h2>{{message}}</h2>
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+  // 在Vue解析之前，div中有一个属性v-cloak
+  // 在Vue解析之后，div中没有一个属性v-cloak
+  // 在Style中控制display
+  setTimeout(function () {
+    const vm = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello'
+      },
+      methods: {
+      }
+    })
+  }, 1000)
+ </script>
+
+</body>
+</html>

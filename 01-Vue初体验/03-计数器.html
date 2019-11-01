@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>计数器</title>
+</head>
+<body>
+
+<div id="app">
+  <h2>当前计数: {{ counter }}</h2>
+<!--  直接在内嵌中使用 v-on:click-->
+<!--  <button v-on:click="counter++">+</button>-->
+<!--  <button v-on:click="counter&#45;&#45;">-</button>-->
+
+<!--  使用Vue的方法响应-->
+  <button v-on:click="add">+</button>
+  <button @click="sub">-</button>
+
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+
+  // MVVM View: div(el) Model: data ViewModel: app(Vue)
+  const vm = new Vue({
+
+    el: '#app',
+    data: {
+      counter: 0
+    },
+    methods: {
+      add: function () {
+        console.log('add')
+        this.counter++
+      },
+      sub: function () {
+        console.log('sub')
+        this.counter--
+      }
+    }
+  })
+</script>
+
+</body>
+</html>

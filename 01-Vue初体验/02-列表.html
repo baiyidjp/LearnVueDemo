@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>列表</title>
+</head>
+<body>
+
+<div id="app">
+  <ul>
+<!--    v-for 遍历 会将遍历得到的数据依次展示-->
+    <li v-for="item in movies">{{ item }}</li>
+  </ul>
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: '消息',
+      movies: ['第一个', '第二个', '第三个', '第四个']
+    }
+  })
+
+</script>
+
+</body>
+</html>

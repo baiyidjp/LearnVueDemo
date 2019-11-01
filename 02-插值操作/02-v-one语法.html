@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>02-V-once语法</title>
+</head>
+<body>
+
+<div id="app">
+  <h2>{{message}}</h2>
+<!--  阻止响应式的改变 v-once-->
+  <h2 v-once>{{message}}</h2>
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello'
+    },
+    methods: {
+    }
+  })
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mustache语法</title>
+</head>
+<body>
+
+<div id="app">
+<!--  普通插值-->
+  <h2>{{ message }}</h2>
+<!--  简单的表达式 -->
+  <h2>{{firstName + lastName}}</h2>
+  <h2>{{firstName + ' ' + lastName}}</h2>
+  <h2>{{firstName}}  {{lastName}}</h2>
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      message: '你好Vue',
+      firstName: 'dong',
+      lastName: 'peng'
+    },
+    methods: {
+    }
+  })
+ </script>
+
+</body>
+</html>
