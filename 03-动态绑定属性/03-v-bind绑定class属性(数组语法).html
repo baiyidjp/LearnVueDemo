@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-bind</title>
+  <style>
+    .active {
+      color: red;
+    }
+    .line {
+      background-color: blue;
+    }
+
+    .title {
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="app">
+  <h2>{{message}}</h2>
+<!--  数组语法-->
+  <h2 :class="['active', 'line']" class="title">v-bind通过bool值控制class</h2>
+<!--  数组语法 变量-->
+  <h2 :class="[active, line]" class="title">v-bind通过bool值控制class</h2>
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello',
+      active: 'active',
+      line: 'line'
+    },
+    methods: {
+    }
+  })
+ </script>
+
+</body>
+</html>

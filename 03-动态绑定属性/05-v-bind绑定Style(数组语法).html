@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <h2 class="active">{{message}}</h2>
+
+  <!--  数组语法 -->
+  <h2 :style="[styleFont, styleColor]">{{message}} v-bind style</h2>
+
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello',
+      styleFont: {fontSize: '100px'},
+      styleColor: {color: 'blue'},
+    },
+    methods: {
+      getStyles() {
+        return {fontSize : this.titleFontSize, color : this.titleColor}
+      }
+    }
+  })
+</script>
+
+</body>
+</html>
