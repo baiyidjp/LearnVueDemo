@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+
+  <!--插入一个值 效率低 需要一个个的替换-->
+  <ul>
+    <li v-for="name in names">{{ name }}</li>
+  </ul>
+
+  <ul>
+    <li v-for="name in names" :key="name">{{ name }}</li>
+  </ul>
+
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      names: ['Dong', 'Kobe', 'Ezreal', 'Wukong']
+    },
+    methods: {
+    }
+  })
+</script>
+
+</body>
+</html>

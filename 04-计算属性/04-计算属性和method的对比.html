@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>计算属性</title>
+</head>
+<body>
+
+<div id="app">
+<!--  直接拼接 -->
+  <h2>{{ firstName }} {{ lastName }}</h2>
+<!--  计算属性 每次都会重新计算 -->
+  <h2>{{ fullName }}</h2>
+  <h2>{{ fullName }}</h2>
+  <h2>{{ fullName }}</h2>
+  <h2>{{ fullName }}</h2>
+<!--  方法 会对结果缓存 性能高-->
+  <h2>{{ getFullName() }}</h2>
+  <h2>{{ getFullName() }}</h2>
+  <h2>{{ getFullName() }}</h2>
+  <h2>{{ getFullName() }}</h2>
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      firstName: 'dong',
+      lastName: 'peng'
+    },
+    computed: {
+
+      fullName() {
+        console.log('调用方法')
+        return this.firstName + ' ' + this.lastName
+      }
+    },
+    methods: {
+
+      getFullName() {
+        console.log('调用计算属性')
+        return this.firstName + ' ' + this.lastName
+      }
+    }
+  })
+</script>
+
+</body>
+</html>

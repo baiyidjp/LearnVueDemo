@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-on</title>
+</head>
+<body>
+
+<div id="app">
+
+  <!-- 不添加任何修饰符 这样会打印两次 冒泡事件 -->
+<!--  <div @click="divClick">-->
+<!--    divClick-->
+  <!--点击button同时响应buttonClick，divClick-->
+<!--    <button @click="buttonClick">按钮</button>-->
+<!--  </div>-->
+
+  <!--添加stop修饰符 阻止冒泡事件-->
+<!--  <div @click="divClick">-->
+<!--    divClick-->
+<!--    &lt;!&ndash;点击button只响应buttonClick&ndash;&gt;-->
+<!--    <button @click.stop="buttonClick">按钮</button>-->
+<!--  </div>-->
+
+  <!--添加prevent修饰符 阻止默认事件-->
+  <form action="baidu">
+    <input type="submit" value="提交" @click.prevent="submitClick"></input>
+  </form>
+  <br>
+
+  <!--监听键盘的响应-->
+  <!--不添加修饰符 监听所有键的响应-->
+  <input type="text" @keyup="keyup">
+  <!--监听回车键enter的响应-->
+  <input type="text" @keyup.enter="keyup">
+
+  <!--once修饰符 值响应一次的点击-->
+  <button @click.once="buttonClick">按钮</button>
+
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello'
+    },
+    methods: {
+      buttonClick() {
+        console.log('buttonClick')
+      },
+      divClick() {
+        console.log('divClick')
+      },
+      submitClick() {
+        console.log('submitClick')
+      },
+      keyup() {
+        console.log('keyup')
+      }
+    }
+  })
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+
+  <div v-if="isMobile">
+    <label for="mobile">手机登录</label>
+    <!--切换时会复用 input 导致已输入的value不会清空 -->
+<!--    <input type="text" id="mobile" placeholder="手机号">-->
+    <!--给控件加一个key 可以强制不复用 重新创建-->
+    <input type="text" id="mobile" placeholder="手机号" key="mobile">
+  </div>
+  <div v-else>
+    <label for="email">邮箱登录</label>
+<!--    <input type="text" id="email" placeholder="邮箱">-->
+    <input type="text" id="email" placeholder="邮箱" key="email">
+  </div>
+  <br>
+  <button @click="clickButton">切换登录方式</button>
+
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      isMobile: true
+    },
+    methods: {
+      clickButton() {
+        this.isMobile = !this.isMobile
+      }
+    }
+  })
+ </script>
+
+</body>
+</html>

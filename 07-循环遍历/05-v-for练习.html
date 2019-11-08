@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <style>
+    .active {
+      color: red;
+    }
+  </style>
+
+</head>
+<body>
+
+<div id="app">
+
+  <ul>
+    <li v-for="(name, index) in names"
+        :class="{active: index === currentIndex}"
+        @click="clickLi(index)">
+      {{ index }}.{{ name }}
+    </li>
+  </ul>
+
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      names: ['Dong', 'Kobe', 'Ezreal', 'Wukong', 'ddd', 'ddddfff'],
+      currentIndex: 0
+    },
+    methods: {
+      clickLi(index) {
+        console.log(index)
+        this.currentIndex = index
+      }
+    }
+  })
+ </script>
+
+</body>
+</html>

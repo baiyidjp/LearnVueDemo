@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>计算属性</title>
+</head>
+<body>
+
+<div id="app">
+  <h2>{{ fullName }}</h2>
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      firstName: 'dong',
+      lastName: 'peng'
+    },
+    computed: {
+
+      // 一般情况下只是使用get方法 可省略set方法
+      // fullName: {
+      //   // set: function() {
+      //   //
+      //   // },
+      //   get() {
+      //
+      //     return this.firstName + ' ' + this.lastName
+      //   }
+      // }
+      // 只有get方法就可以简写了
+      fullName() {
+        return this.firstName + ' ' + this.lastName
+      }
+    },
+    methods: {
+    }
+  })
+</script>
+
+</body>
+</html>

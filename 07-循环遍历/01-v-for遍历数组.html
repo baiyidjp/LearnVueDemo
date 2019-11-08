@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-for</title>
+</head>
+<body>
+
+<div id="app">
+
+  <!-- 简单的遍历 -->
+<!--  <ul>-->
+<!--    <li v-for="name in names">{{ name }}</li>-->
+<!--  </ul>-->
+
+  <!--遍历中获取下标-->
+  <ul>
+    <li v-for="(name, index) in names">{{ index+1 }} {{ name }}</li>
+  </ul>
+
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      names: ['Dong', 'Kobe', 'Ezreal', 'Wukong']
+    },
+    methods: {
+    }
+  })
+ </script>
+
+</body>
+</html>

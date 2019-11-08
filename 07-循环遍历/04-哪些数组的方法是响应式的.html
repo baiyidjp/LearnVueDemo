@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+
+  <ul>
+    <li v-for="name in names">{{ name }}</li>
+  </ul>
+  <br>
+  <button @click="buttonClick">按钮</button>
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      names: ['Dong', 'Kobe', 'Ezreal', 'Wukong', 'ddd', 'ddddfff']
+    },
+    methods: {
+      buttonClick() {
+
+        // 通过push可以响应式 数组最后加一个元素
+        // this.names.push('aaa')
+        // this.names.push('aaa', 'bbb', 'ccc')
+
+        // 通过pop可以 删除数组的最后一个元素
+        // this.names.pop()
+
+      //  通过shift可以 删除数组的第一个元素
+      //     this.names.shift()
+
+        // unshift 数组最前面添加元素
+        // this.names.unshift('aaa')
+        // this.names.unshift('aaa', 'bbb', 'fff')
+
+      //  splice 删除、插入、替换元素。
+        // 第一个元素是操作的开始位置 0,1,2,3...(包含当前元素)
+        // 删除元素：第二个参数传入你要删除几个元素，不传代表删除当前开始到最后的所有元素，后面没有入参
+        // 替换元素：第二个参数表示要替换几个元素，后面的是要替换的元素
+        // 插入元素：第二个参数传入0并且后面跟上要插入的元素就行
+        // this.names.splice(2) // 删除 2-后面的所有元素
+        // this.names.splice(0, 1)  // 删除第一个元素
+        // this.names.splice(0, 2, '替换1', '替换2') // 替换从第0个元素(包含第0个元素)开始的2个元素
+        // this.names.splice(0, 0, '插入1', '插入2') // 插入元素 在第0个位置插入元素，可以插入多个
+
+      //  下标改变不可以做到响应式
+      //   this.names[0] = '000'
+      //   可以使用splice替换元素
+      //   this.names.splice(0, 1, '000')
+      //  通过Vue的方法修改 set(要修改的对象， 索引值，修改的值)
+      //   Vue.set(this.names, 0, '000')
+      }
+    }
+  })
+</script>
+
+</body>
+</html>

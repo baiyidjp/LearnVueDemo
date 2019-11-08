@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-on</title>
+</head>
+<body>
+
+<div id="app">
+  <h2>{{ counter }}</h2>
+<!--  事件调用的方法没有参数 -->
+  <button @click="btn1Click()">事件调用的方法没有参数- btn1Click() -按钮1</button>
+  <br>
+  <button @click="btn1Click">事件调用的方法没有参数- btn1Click -按钮1</button>
+  <br>
+<!--  在事件定义时，写函数时省略了小括号，但是方法本身是需要一个参数的 -->
+<!--  打印的是undefined -->
+  <button @click="btn2Click()">事件调用的方法有参数- btn2Click() -按钮2</button>
+  <br>
+<!--  打印的event对象 -->
+  <button @click="btn2Click">事件调用的方法有参数- btn2Click -按钮2</button>
+  <br>
+<!--  打印的是传入的值 -->
+  <button @click="btn2Click(222)">事件调用的方法有参数- btn2Click(入参) -按钮2</button>
+  <br>
+<!--  方法定义时，既需要参数，又需要event对象 未传参就是默认第一个参数是event对象 -->
+<!--  打印第一个是event对象作为了入参，第二个是undefined -->
+  <button @click="btn3Click">事件调用的方法有参数和event对象- btn3Click -按钮3</button>
+  <br>
+  <!--  打印都是undefined ，一个参数未传-->
+  <button @click="btn3Click()">事件调用的方法有参数和event对象- btn3Click() -按钮3</button>
+  <br>
+  <!--  打印第一个是入参，第二个是event对象打印是 undefined -->
+  <button @click="btn3Click(333)">事件调用的方法有参数和event对象- btn3Click(333) -按钮3</button>
+  <br>
+  <!--  打印第一个是入参，第二个是event对象 -->
+  <button @click="btn3Click(333, $event)">事件调用的方法有参数和event对象- btn3Click(333, $event) -按钮3</button>
+  <br>
+  <button>按钮4</button>
+  <button>按钮5</button>
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      counter: 0
+    },
+    methods: {
+      btn1Click() {
+        console.log('btn1Click')
+      },
+      btn2Click(a) {
+        console.log(a)
+      },
+      btn3Click(a, event) {
+        console.log(a,event)
+      },
+      btn4Click() {
+        console.log('btn4Click')
+      },
+      btn5Click() {
+        console.log('btn5Click')
+      },
+    }
+  })
+</script>
+
+</body>
+</html>

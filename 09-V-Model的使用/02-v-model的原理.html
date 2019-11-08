@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-model</title>
+</head>
+<body>
+
+<div id="app">
+  <!--v-model的双向绑定 将message绑定到input的value上-->
+<!--  <input type="text" v-model="message">-->
+
+  <!-- v-model 的原理 -->
+  <!--v-bind:value 绑定message到input的value上 -->
+  <!-- v-on:input 监听input的输入事件，实时改变message的值 -->
+  <input type="text" :value="message" @input="valueChange">
+  <h2>{{message}}</h2>
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello'
+    },
+    methods: {
+      valueChange(event) {
+        this.message = event.target.value
+      }
+    }
+  })
+</script>
+
+</body>
+</html>

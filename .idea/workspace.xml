@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31ff7255-49ce-4311-9ae7-3ffb123fbba4" name="Default Changelist" comment="" />
+    <list default="true" id="31ff7255-49ce-4311-9ae7-3ffb123fbba4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/04-计算属性/03-计算属性的set和get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04-计算属性/04-计算属性和method的对比.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-事件监听/01-v-on的基本使用和语法糖.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-事件监听/02-v-on的参数问题.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-事件监听/03-v-on的修饰符.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-条件判断/01-v-if,v-else,v-else-if的使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-条件判断/02-切换登录方式.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-条件判断/03-v-show和v-if的区别.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-循环遍历/01-v-for遍历数组.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-循环遍历/02-v-for遍历对象.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-循环遍历/03-v-for使用添加key.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-循环遍历/04-哪些数组的方法是响应式的.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-循环遍历/05-v-for练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-购物车/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-购物车/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-购物车/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-V-Model的使用/01-v-model的基本使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-V-Model的使用/02-v-model的原理.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-V-Model的使用/03-v-model结合radio类型.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-V-Model的使用/04-v-model结合CheckBox的使用.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-动态绑定属性/01-v-bind的基本使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/03-动态绑定属性/01-v-bind的基本使用.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -26,7 +52,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/05-事件监听" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -51,6 +83,8 @@
       <option name="presentableId" value="Default" />
       <updated>1572590843959</updated>
       <workItem from="1572590845477" duration="7889000" />
+      <workItem from="1572603885872" duration="28000" />
+      <workItem from="1573179583422" duration="15635000" />
     </task>
     <task id="LOCAL-00001" summary="bind 计算属性">
       <created>1572603805709</created>
@@ -59,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572603805709</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="bind 计算属性">
+      <created>1572603891512</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572603891512</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,7 +111,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
