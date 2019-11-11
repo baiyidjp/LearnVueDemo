@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+
+  <!--选择一个-->
+  <select name="abc" v-model="message">
+    <option value="111">111</option>
+    <option value="222">222</option>
+    <option value="333">333</option>
+    <option value="444">444</option>
+    <option value="555">555</option>
+  </select>
+  <h2>选择的是：{{ message }}</h2>
+  <br>
+  <br>
+
+  <!--选择多个-->
+  <select name="abc" v-model="selects" multiple>
+    <option value="111">111</option>
+    <option value="222">222</option>
+    <option value="333">333</option>
+    <option value="444">444</option>
+    <option value="555">555</option>
+  </select>
+  <h2>选择的是：{{ selects }}</h2>
+
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      message: '333',
+      selects: []
+    },
+    methods: {
+    }
+  })
+ </script>
+
+</body>
+</html>

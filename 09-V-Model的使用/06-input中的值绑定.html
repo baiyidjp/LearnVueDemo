@@ -8,15 +8,6 @@
 
 <div id="app">
 
-  <!--单选框-->
-  <label for="agree">
-    <input type="checkbox" id="agree" v-model="isAgree">同意协议
-  </label>
-  <h2>你选择的是：{{ isAgree }}</h2>
-  <button :disabled="!isAgree">下一步</button>
-  <br>
-  <br>
-
   <!--多选框-->
   <label for="one">
     <input type="checkbox" id="one" value="one" v-model="array">one
@@ -32,6 +23,11 @@
   </label>
   <h2>你选择的是：{{ array }}</h2>
 
+  <!--值绑定-->
+  <label v-for="item in items" :for="item">
+    <input type="checkbox" :id="item" :value="item" v-model="array">{{item}}
+  </label>
+
 </div>
 
 <script src="../js/vue.js"></script>
@@ -42,12 +38,13 @@
     data: {
       message: 'Hello',
       isAgree: false,
-      array: []
+      array: [],
+      items: ['one', 'two', 'three', 'four', 'five', 'six']
     },
     methods: {
     }
   })
- </script>
+</script>
 
 </body>
 </html>
