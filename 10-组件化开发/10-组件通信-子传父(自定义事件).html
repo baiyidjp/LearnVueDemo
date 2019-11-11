@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>组件化</title>
+</head>
+<body>
+
+<!-- 父组件模板 -->
+<div id="app">
+  <!-- 父组件通过 v-on 监听子组件发射的事件 -->
+  <!-- 系统默认事件传参是event事件，但是子组件的自定义事件是么有event事件，默认的参数就是子组件传的数据 -->
+  <cpn @item-click="buttonClick"></cpn>
+</div>
+
+<!-- 子组件模板 -->
+<template id="cpn">
+  <div>
+    <button v-for="item in items" @click="buttonClick(item)">{{ item.name }}</button>
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+
+<script>
+
+  // 子组件
+  const cpn = {
+    template: '#cpn',
+    data() {
+      return {
+        items: [
+          {id: 1, name: '111'},
+          {id: 2, name: '222'},
+          {id: 3, name: '333'},
+          {id: 4, name: '444'}
+        ]
+      }
+    },
+    methods: {
+      buttonClick(item) {
+        // 通过自定义事件传给父组件
+        // this.$emit('item-click')
+        // 将item传给事件
+        this.$emit('item-click', item)
+      }
+    }
+  }
+
+  // 父组件
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello'
+    },
+    components: {
+      cpn
+    },
+    methods: {
+      buttonClick(item) {
+        console.log(item)
+      }
+    }
+  })
+</script>
+
+</body>
+</html>

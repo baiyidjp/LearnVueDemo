@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>组件化</title>
+</head>
+<body>
+
+<div id="app">
+
+  <!--父组件的数据传给子组件 绑定后会把array当成一个变量去父组件寻找-->
+  <cpn :carray="array" :cmessage="message"></cpn>
+  <cpn :cmessage="message"></cpn>
+
+</div>
+
+<template id="cpn">
+  <div>
+    <ul>
+      <li v-for="item in carray">{{item}}</li>
+    </ul>
+    {{cmessage}}
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+
+<script>
+
+  // 父传子 props
+  const cpn = {
+    template: '#cpn',
+    // 接收父组件的数据
+    // 1.可以写成一个数组
+    // props: ['carray', 'cmessage'],
+    // 2. 可以写成一个对象
+    props: {
+      // 指定接收类型
+      // carray: Array,
+      // cmessage: String
+
+    //  可以提供一些默认值
+      cmessage: {
+        type: String,
+        default: 'default'
+      },
+      carray: {
+        type: Array,
+        // 如果类型是Object或者Array 必须适应函数返回默认值
+        default() {
+          return ['1', '2', '3', '默认']
+        },
+        // 必须要传的属性值 不传就报错
+        // required: true
+      }
+    },
+    data() {
+      return {}
+    }
+  }
+
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      message: '父组件数据',
+      array: ['111', '222', '333', '444', '555']
+    },
+    components: {
+      cpn
+    }
+  })
+ </script>
+
+</body>
+</html>
