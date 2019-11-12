@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>组件化</title>
+</head>
+<body>
+
+<div id="app">
+
+  <!--父组件绑定子组件的自定义事件-->
+  <cpn :number1="num1"
+       :number2="num2"
+       @number1-input="number1Input"
+       @number2-input="number2Input">
+  </cpn>
+
+</div>
+
+<template id="cpn">
+  <div>
+    <h2>props: {{ number1 }}</h2>
+    <h2>data: {{ dnumber1 }}</h2>
+<!--    <input type="text" v-model="dnumber1">-->
+    <input type="text" :value="dnumber1" @input="number1Input">
+    <h2>props: {{ number2 }}</h2>
+    <h2>data: {{ dnumber2 }}</h2>
+<!--    <input type="text" v-model="dnumber2">-->
+    <input type="text" :value="dnumber2" @input="number2Input">
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+
+<script>
+
+  const cpn = {
+    template: '#cpn',
+    props: {
+      number1: Number,
+      number2: Number
+    },
+    data() {
+      return {
+        dnumber1: this.number1,
+        dnumber2: this.number2
+      }
+    },
+    methods: {
+      number1Input(event) {
+        this.dnumber1 = parseFloat(event.target.value)
+        this.$emit('number1-input', this.dnumber1)
+
+      //  number1改变的时候要保证number2的两个值都是number1的100倍
+        this.dnumber2 = this.dnumber1*100
+        this.$emit('number2-input', this.dnumber2)
+      },
+      number2Input(event) {
+        this.dnumber2 = parseFloat(event.target.value)
+        this.$emit('number2-input', this.dnumber2)
+
+        //  number2改变的时候要保证number1的两个值都是number2的1/100
+        this.dnumber1 = this.dnumber2/100
+        this.$emit('number1-input', this.dnumber1)
+      }
+    }
+  }
+
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      num1: 1,
+      num2: 2
+    },
+    components: {
+      cpn
+    },
+    methods: {
+      number1Input(value) {
+        this.num1 = parseFloat(value)
+      },
+      number2Input(value) {
+        this.num2 = parseFloat(value)
+      }
+    }
+  })
+ </script>
+
+</body>
+</html>

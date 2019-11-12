@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>作用域插槽</title>
+</head>
+<body>
+
+<div id="app">
+  <!-- 默认数据 -->
+  <cpn></cpn>
+  <!-- 改变子组件的默认插槽 -->
+  <cpn>
+    <!--2. 在子组件引用时，使用template模板引入插槽-->
+    <!-- slot-scope 是固定的语法 "slot可自定义"-->
+<!--    <template slot-scope="slot">-->
+<!--      <span v-for="item in slot.languages">{{ item }} - </span>-->
+<!--      <span>{{ slot.languages.join(' - ') }}</span>-->
+<!--    </template>-->
+    <template slot-scope="slotCustom">
+      <span>{{ slotCustom.languages.join(' - ') }}</span>
+    </template>
+  </cpn>
+  <cpn></cpn>
+</div>
+
+<template id="cpn">
+  <div>
+    <!--1. 在插槽上绑定对呀的数据 languages名字是自定义 -->
+    <slot :languages="pLanguages">
+      <ul>
+        <li v-for="language in pLanguages">{{ language }}</li>
+      </ul>
+    </slot>
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+
+<script>
+
+  const cpn = {
+    template: '#cpn',
+    methods: {
+      showMessage() {
+        console.log('子组件1Message')
+      }
+    },
+    data() {
+      return {
+        pLanguages: ['Java', 'JavaScript', 'Swift', 'C++', 'Objective-C', "Go", "C#", "Python"]
+      }
+    }
+  }
+
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello'
+    },
+    components: {
+      cpn
+    },
+    methods: {
+    }
+  })
+</script>
+
+</body>
+</html>

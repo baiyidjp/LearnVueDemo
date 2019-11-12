@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>插槽</title>
+</head>
+<body>
+
+<div id="app">
+  <cpn>
+    <span slot="c">标题</span>
+  </cpn>
+</div>
+
+<template id="cpn">
+  <div>
+    <slot name="l">
+      <span>左边</span>
+    </slot>
+    <slot name="c">
+      <span>中间</span>
+    </slot>
+    <slot name="r">
+      <span>右边</span>
+    </slot>
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+
+<script>
+
+  const cpn = {
+    template: '#cpn',
+    methods: {
+      showMessage() {
+        console.log('子组件1Message')
+      }
+    },
+    data() {
+      return {
+        name: '子组件1Name'
+      }
+    }
+  }
+
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello'
+    },
+    components: {
+      cpn
+    },
+    methods: {
+    }
+  })
+</script>
+
+</body>
+</html>

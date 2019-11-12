@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>插槽</title>
+</head>
+<body>
+
+<div id="app">
+  <cpn>
+    <!--直接在这里插入需要显示的内容 插槽会自动替换-->
+    <button disabled="false">按钮</button>
+  </cpn>
+  <cpn>
+    <!--插槽将会替换所有的内容-->
+    <!--多个插槽会多次替换，全部都会显示，例如两个插槽就会展示两遍 span,p -->
+    <span>插槽啊插槽</span>
+    <p>插槽啊插槽1</p>
+  </cpn>
+  <cpn>
+    <i>哈哈哈哈</i>
+  </cpn>
+  <cpn></cpn>
+</div>
+
+<template id="cpn">
+  <div>
+    <h2>我是子组件标题</h2>
+    <p>我是子组件的内容</p>
+    <slot></slot>
+    <!--插槽可以带默认值-->
+    <slot>
+      <button>按钮</button>
+    </slot>
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+
+<script>
+
+  const cpn = {
+    template: '#cpn',
+    methods: {
+      showMessage() {
+        console.log('子组件1Message')
+      }
+    },
+    data() {
+      return {
+        name: '子组件1Name'
+      }
+    }
+  }
+
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello'
+    },
+    components: {
+      cpn
+    },
+    methods: {
+    }
+  })
+</script>
+
+</body>
+</html>

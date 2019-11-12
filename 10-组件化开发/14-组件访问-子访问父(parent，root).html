@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>组件化</title>
+</head>
+<body>
+
+<div id="app">
+  <cpn></cpn>
+</div>
+
+<template id="cpn1">
+  <div>
+    <h2>我是子组件1</h2>
+    <button @click="buttonClick">按钮</button>
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+
+<template id="cpn">
+  <div>
+    <cpn1></cpn1>
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+
+<script>
+
+  const cpn1 = {
+    template: '#cpn1',
+    methods: {
+      buttonClick() {
+        console.log(this.$parent)
+        this.$parent.buttonClick()
+        // 直接访问根组件 $root
+        console.log(this.$root)
+      }
+    },
+    data() {
+      return {
+        name: '子组件1Name'
+      }
+    }
+  }
+
+  const cpn = {
+    template: '#cpn',
+    methods: {
+      buttonClick() {
+        console.log('this is cpn')
+        console.log(this.$parent)
+      }
+    },
+    components: {
+      cpn1
+    }
+  }
+
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello'
+    },
+    components: {
+      cpn
+    },
+    methods: {
+    }
+  })
+</script>
+
+</body>
+</html>
