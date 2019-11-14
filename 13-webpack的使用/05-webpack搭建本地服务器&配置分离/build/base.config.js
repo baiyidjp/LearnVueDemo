@@ -1,12 +1,14 @@
 const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/main.js',
   output: {
-    path: path.resolve(__dirname, 'dist'), // 通过 node 动态获取绝对路径
+    path: path.resolve(__dirname, '../dist'), // 通过 node 动态获取绝对路径,并且找到上层目录
     filename: 'bundle.js',
-    /* 打包后的使用的图片路径 */
-    publicPath: 'dist/'
+    /* 打包后的使用的图片路径 当使用了这个插件（html-webpack-plugin - 将index.html打包到dist文件中）后不需要这个路径了 */
+    // publicPath: 'dist/'
   },
   module: {
     rules: [
@@ -55,10 +57,27 @@ module.exports = {
             presets: ['es2015']
           }
         }
+      },
+      {
+        test: /\.vue$/,
+        use: {
+          loader: 'vue-loader'
+        }
       }
     ]
-  }
+  },
+  resolve: {
+    extensions: ['.js', '.vue', '.json'],
+    alias: {
+      /* 安装的是运行时的Vue,如果想使用完整版的需要加上这个配置 */
+      'vue$': 'vue/dist/vue.esm.js'
+    }
+  },
+  plugins: [
+    new webpack.BannerPlugin('可以给打包的js文件添加额外信息'),
+    /* 将index.html 打包到dist文件中 */
+    new HtmlWebpackPlugin({
+      template: 'index.html'
+    })
+  ]
 }
-
-// 配置本地的webpack npm install --save-dev webpack@3.6.0
-// 这样在 packpage.json 中配置的 script 的 build 首先会找本地的webpack执行 ，如果没有才会找全局的webpack执行
