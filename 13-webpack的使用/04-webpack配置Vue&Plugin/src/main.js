@@ -51,7 +51,7 @@ import App from './vue/App.vue'
 new Vue({
   el: '#app',
   // 在模板中使用子组件，Vue编译时内部会替换当前挂载的标签内容，其实就是加载的子组件的内容
-  template: '<App/>',
+  template: `<App/>`,
   // 将写好的组件作为子组件加载到App实例中
   components: {
     App

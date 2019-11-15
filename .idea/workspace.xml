@@ -2,42 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31ff7255-49ce-4311-9ae7-3ffb123fbba4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/03-webpack的loader/src/img/big.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/03-webpack的loader/src/img/small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/src/css/normal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/src/css/special.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/src/img/big.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/src/img/small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/src/js/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/src/vue/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/src/vue/Test.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/src/vue/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/05-webpack搭建本地服务器&amp;配置分离/build/base.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/05-webpack搭建本地服务器&amp;配置分离/build/dev.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/05-webpack搭建本地服务器&amp;配置分离/build/prod.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/05-webpack搭建本地服务器&amp;配置分离/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/05-webpack搭建本地服务器&amp;配置分离/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/05-webpack搭建本地服务器&amp;配置分离/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/05-webpack搭建本地服务器&amp;配置分离/src/css/normal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/05-webpack搭建本地服务器&amp;配置分离/src/css/special.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/05-webpack搭建本地服务器&amp;配置分离/src/img/big.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/05-webpack搭建本地服务器&amp;配置分离/src/img/small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/05-webpack搭建本地服务器&amp;配置分离/src/js/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/05-webpack搭建本地服务器&amp;配置分离/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/05-webpack搭建本地服务器&amp;配置分离/src/vue/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/05-webpack搭建本地服务器&amp;配置分离/src/vue/Test.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-webpack的使用/05-webpack搭建本地服务器&amp;配置分离/src/vue/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14-VueCLI/01-VueCli2Test/src/assets/cli2_content.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14-VueCLI/01-VueCli2Test/src/assets/init_cli2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13-webpack的使用/03-webpack的loader/dist/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/13-webpack的使用/03-webpack的loader/dist/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13-webpack的使用/03-webpack的loader/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/13-webpack的使用/03-webpack的loader/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13-webpack的使用/03-webpack的loader/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/13-webpack的使用/03-webpack的loader/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13-webpack的使用/03-webpack的loader/src/css/normal.css" beforeDir="false" afterPath="$PROJECT_DIR$/13-webpack的使用/03-webpack的loader/src/css/normal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13-webpack的使用/03-webpack的loader/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/13-webpack的使用/03-webpack的loader/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/src/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,19 +44,21 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/13-webpack的使用" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/14-VueCLI/01-VueCli2Test/src/assets" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/13-webpack的使用" />
-      <recent name="$PROJECT_DIR$/13-webpack的使用/03-webpack的loader/src/img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/13-webpack的使用/02-webpack的配置/src/js" />
       <recent name="$PROJECT_DIR$/05-事件监听" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/14-VueCLI/01-VueCli2Test/src/assets" />
+      <recent name="$PROJECT_DIR$/13-webpack的使用" />
+      <recent name="$PROJECT_DIR$/13-webpack的使用/03-webpack的loader/src/img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -120,7 +90,9 @@
       <workItem from="1573526420151" duration="16699000" />
       <workItem from="1573551974499" duration="647000" />
       <workItem from="1573713933157" duration="5101000" />
-      <workItem from="1573719427396" duration="6130000" />
+      <workItem from="1573719427396" duration="6297000" />
+      <workItem from="1573728029012" duration="201000" />
+      <workItem from="1573783735015" duration="8226000" />
     </task>
     <task id="LOCAL-00001" summary="bind 计算属性">
       <created>1572603805709</created>
@@ -171,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573552608244</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="webpack 配置Vue 插件 本地服务器 配置分离">
+      <created>1573727612274</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1573727612274</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +175,7 @@
     <MESSAGE value="components" />
     <MESSAGE value="components &amp; slot" />
     <MESSAGE value="webpack &amp; loader" />
-    <option name="LAST_COMMIT_MESSAGE" value="webpack &amp; loader" />
+    <MESSAGE value="webpack 配置Vue 插件 本地服务器 配置分离" />
+    <option name="LAST_COMMIT_MESSAGE" value="webpack 配置Vue 插件 本地服务器 配置分离" />
   </component>
 </project>
