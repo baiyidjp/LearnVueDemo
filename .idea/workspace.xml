@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31ff7255-49ce-4311-9ae7-3ffb123fbba4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/14-VueCLI/01-VueCli2Test/src/assets/cli2_content.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14-VueCLI/01-VueCli2Test/src/assets/init_cli2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15-箭头函数/01-箭头函数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15-箭头函数/02-箭头函数的参数和返回值.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15-箭头函数/03-箭头函数的this的使用.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/13-webpack的使用/04-webpack配置Vue&amp;Plugin/src/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +16,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Less File" />
         <option value="Vue Single File" />
@@ -24,6 +23,7 @@
         <option value="Copy of Vue Single File Component" />
         <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -92,7 +92,7 @@
       <workItem from="1573713933157" duration="5101000" />
       <workItem from="1573719427396" duration="6297000" />
       <workItem from="1573728029012" duration="201000" />
-      <workItem from="1573783735015" duration="8226000" />
+      <workItem from="1573783735015" duration="9450000" />
     </task>
     <task id="LOCAL-00001" summary="bind 计算属性">
       <created>1572603805709</created>
@@ -150,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573727612274</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Vue cli2 cli3">
+      <created>1573799063682</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573799063682</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +183,7 @@
     <MESSAGE value="components &amp; slot" />
     <MESSAGE value="webpack &amp; loader" />
     <MESSAGE value="webpack 配置Vue 插件 本地服务器 配置分离" />
-    <option name="LAST_COMMIT_MESSAGE" value="webpack 配置Vue 插件 本地服务器 配置分离" />
+    <MESSAGE value="Vue cli2 cli3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vue cli2 cli3" />
   </component>
 </project>
