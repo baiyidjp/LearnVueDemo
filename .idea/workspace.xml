@@ -1,63 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31ff7255-49ce-4311-9ae7-3ffb123fbba4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/.postcssrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/build/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/build/check-versions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/build/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/build/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/build/vue-loader.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/build/webpack.base.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/build/webpack.dev.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/build/webpack.prod.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/config/dev.env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/config/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/config/prod.env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/src/components/About.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/src/components/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/01-Vue-Router/static/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/.postcssrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/build/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/build/check-versions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/build/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/build/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/build/vue-loader.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/build/webpack.base.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/build/webpack.dev.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/build/webpack.prod.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/config/dev.env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/config/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/config/prod.env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/components/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/components/User.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/static/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/package-lock.json" afterDir="false" />
+    <list default="true" id="31ff7255-49ce-4311-9ae7-3ffb123fbba4" name="Default Changelist" comment="Vue cli2 cli3">
+      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/components/HomeMessage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/components/HomeNews.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/components/Profile.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/components/User.vue" beforeDir="false" afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/components/User.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/router/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +100,8 @@
       <workItem from="1573719427396" duration="6297000" />
       <workItem from="1573728029012" duration="201000" />
       <workItem from="1573783735015" duration="11179000" />
-      <workItem from="1573803838868" duration="5608000" />
+      <workItem from="1573803838868" duration="6274000" />
+      <workItem from="1574065453495" duration="3461000" />
     </task>
     <task id="LOCAL-00001" summary="bind 计算属性">
       <created>1572603805709</created>
@@ -225,6 +180,21 @@
             <State>
               <option name="COLUMN_ORDER" />
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
