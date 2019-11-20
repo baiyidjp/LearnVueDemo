@@ -1,17 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31ff7255-49ce-4311-9ae7-3ffb123fbba4" name="Default Changelist" comment="Vue cli2 cli3">
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/components/HomeMessage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/components/HomeNews.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/components/Profile.vue" afterDir="false" />
+    <list default="true" id="31ff7255-49ce-4311-9ae7-3ffb123fbba4" name="Default Changelist" comment="Vue Router + keep-alive">
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/.postcssrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/build/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/build/check-versions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/build/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/build/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/build/vue-loader.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/build/webpack.base.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/build/webpack.dev.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/build/webpack.prod.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/config/dev.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/config/prod.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar/cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar/cart_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar/home_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar/message.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar/message_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar/profile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar/profile_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/components/tabbar/TabBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/components/tabbar/TabBarItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/views/cart/Cart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/views/home/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/views/message/Message.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/views/profile/Profile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/static/.gitkeep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/components/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/components/User.vue" beforeDir="false" afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/components/User.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/16-Vue-Router/02-动态路由/src/router/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +52,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="Less File" />
         <option value="Vue Single File" />
         <option value="Vue File" />
@@ -30,6 +59,7 @@
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -51,21 +81,23 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/14-VueCLI/01-VueCli2Test/src/assets" />
-    <property name="list.type.of.created.stylesheet" value="Less" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar" />
+      <recent name="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets" />
+      <recent name="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img" />
+      <recent name="$PROJECT_DIR$/14-VueCLI/01-VueCli2Test/src/assets" />
+      <recent name="$PROJECT_DIR$/13-webpack的使用" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/13-webpack的使用/02-webpack的配置/src/js" />
       <recent name="$PROJECT_DIR$/05-事件监听" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/14-VueCLI/01-VueCli2Test/src/assets" />
-      <recent name="$PROJECT_DIR$/13-webpack的使用" />
-      <recent name="$PROJECT_DIR$/13-webpack的使用/03-webpack的loader/src/img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -101,7 +133,8 @@
       <workItem from="1573728029012" duration="201000" />
       <workItem from="1573783735015" duration="11179000" />
       <workItem from="1573803838868" duration="6274000" />
-      <workItem from="1574065453495" duration="3461000" />
+      <workItem from="1574065453495" duration="3589000" />
+      <workItem from="1574216190417" duration="12802000" />
     </task>
     <task id="LOCAL-00001" summary="bind 计算属性">
       <created>1572603805709</created>
@@ -166,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573799063682</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Vue Router">
+      <created>1574072538119</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1574072538119</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +249,8 @@
     <MESSAGE value="webpack &amp; loader" />
     <MESSAGE value="webpack 配置Vue 插件 本地服务器 配置分离" />
     <MESSAGE value="Vue cli2 cli3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vue cli2 cli3" />
+    <MESSAGE value="Vue Router" />
+    <MESSAGE value="Vue Router + keep-alive" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vue Router + keep-alive" />
   </component>
 </project>
