@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>02-promise</title>
+</head>
+<body>
+
+<script>
+
+  new Promise((resolve, reject) => {
+    /* 使用timeout模拟异步操作 */
+    setTimeout(() => {
+      /* 将结果传入 then 中 */
+      // resolve('第一次请求结果')
+      /* 将错误信息传入 catch 中 */
+      reject('错误信息')
+    }, 2000)
+    /* then 也可以直接写两个函数 一个是resolve 一个是reject */
+  }).then(data => {
+    console.log(data);
+  }, error => {
+    console.log(error);
+  })
+
+</script>
+
+</body>
+</html>

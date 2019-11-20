@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>01-Promise的基本使用</title>
+</head>
+<body>
+
+<script>
+
+  /*
+  * 处理异步操作，非常之优雅
+  * new -> 构造函数（1.保存了一些状态信息 2. 执行传入的函数）
+  * 执行传入的函数时，会传入两个参数，resolve，reject，本身也是两个函数
+  * */
+  new Promise((resolve, reject) => {
+    /* 使用timeout模拟异步操作 */
+    setTimeout(() => {
+      /* 将结果传入 then 中 */
+      // resolve('第一次请求结果')
+      /* 将错误信息传入 catch 中 */
+      reject('错误信息')
+    }, 2000)
+  }).then((data) => {
+    console.log(data);
+  }).catch((error) => {
+    console.log(error);
+  })
+
+
+
+</script>
+
+</body>
+</html>

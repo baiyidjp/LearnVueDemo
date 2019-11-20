@@ -1,46 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31ff7255-49ce-4311-9ae7-3ffb123fbba4" name="Default Changelist" comment="Vue Router + keep-alive">
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/.postcssrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/build/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/build/check-versions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/build/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/build/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/build/vue-loader.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/build/webpack.base.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/build/webpack.dev.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/build/webpack.prod.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/config/dev.env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/config/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/config/prod.env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar/cart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar/cart_active.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar/home.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar/home_active.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar/message.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar/message_active.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar/profile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar/profile_active.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/components/tabbar/TabBar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/components/tabbar/TabBarItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/views/cart/Cart.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/views/home/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/views/message/Message.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/views/profile/Profile.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-TabBar/TabBarDemo/static/.gitkeep" afterDir="false" />
+    <list default="true" id="31ff7255-49ce-4311-9ae7-3ffb123fbba4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/18-Promise使用/01-Promise的基本使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/18-Promise使用/02-Promise的另外调用方式.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/18-Promise使用/03-Promise的链式调用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/18-Promise使用/04-Promise的all的使用.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,10 +21,10 @@
         <option value="Vue Single File" />
         <option value="Vue File" />
         <option value="Copy of Vue Single File Component" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="Vue Single File Component" />
         <option value="CSS File" />
+        <option value="Vue Single File Component" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -134,7 +99,7 @@
       <workItem from="1573783735015" duration="11179000" />
       <workItem from="1573803838868" duration="6274000" />
       <workItem from="1574065453495" duration="3589000" />
-      <workItem from="1574216190417" duration="12802000" />
+      <workItem from="1574216190417" duration="17308000" />
     </task>
     <task id="LOCAL-00001" summary="bind 计算属性">
       <created>1572603805709</created>
@@ -206,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574072538119</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="tabbar demo">
+      <created>1574234681847</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1574234681848</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +223,7 @@
     <MESSAGE value="Vue cli2 cli3" />
     <MESSAGE value="Vue Router" />
     <MESSAGE value="Vue Router + keep-alive" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vue Router + keep-alive" />
+    <MESSAGE value="tabbar demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="tabbar demo" />
   </component>
 </project>

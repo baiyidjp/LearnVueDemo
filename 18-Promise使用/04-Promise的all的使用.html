@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>04-Promise的all的使用</title>
+</head>
+<body>
+
+<script>
+
+  Promise.all([
+    new Promise(resolve => {
+      setTimeout(() => {
+        resolve('Data1')
+      }, 2000)
+    }),
+    new Promise(resolve => {
+      setTimeout(() => {
+        resolve('Data2')
+      }, 5500)
+    })
+  ]).then(resolves => {
+    // 会等到所有请求执行完毕才会回调 then
+    console.log(resolves);
+  })
+
+</script>
+
+</body>
+</html>

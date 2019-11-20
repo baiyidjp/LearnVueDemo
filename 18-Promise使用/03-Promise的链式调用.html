@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>03-Promise链式调用</title>
+</head>
+<body>
+
+<script>
+
+  // 第一种链式调用
+  // new Promise((resolve, reject) => {
+  //   setTimeout(() => {
+  //     resolve('第一次请求结果')
+  //   }, 2000)
+  // }).then((data) => {
+  //   console.log(data);
+  //   return new Promise((resolve, reject) => {
+  //     setTimeout(() => {
+  //       resolve('第二次请求结果')
+  //     }, 2000)
+  //   })
+  // }).then(data => {
+  //   console.log(data);
+  // })
+
+  // 第二种链式调用
+  // new Promise(resolve => {
+  //   setTimeout(() => {
+  //     resolve('Data')
+  //   }, 2000)
+  // }).then((data) => {
+  //   console.log('网络请求的数据: ' + data);
+  //   return new Promise(resolve => {
+  //     resolve('第一次处理数据: ' + data)
+  //   })
+  // }).then(data => {
+  //   console.log(data);
+  //   return new Promise(resolve => {
+  //     resolve('第二次处理数据: ' + data)
+  //   })
+  // }).then(data => {
+  //   console.log(data);
+  //   return new Promise(resolve => {
+  //     resolve('第三次处理数据: ' + data)
+  //   })
+  // }).then(data => {
+  //   console.log(data);
+  // })
+
+  // 上面的 简写 直接return Promise.resolve()
+  // new Promise(resolve => {
+  //   setTimeout(() => {
+  //     resolve('Data')
+  //   }, 2000)
+  // }).then((data) => {
+  //   console.log('网络请求的数据: ' + data);
+  //   return Promise.resolve('第一次处理数据: ' + data)
+  // }).then(data => {
+  //   console.log(data);
+  //   return Promise.resolve('第二次处理数据: ' + data)
+  // }).then(data => {
+  //   console.log(data);
+  //   return Promise.resolve('第三次处理数据: ' + data)
+  // }).then(data => {
+  //   console.log(data);
+  // })
+
+  // 最简写的版本 直接return数据 给下一层使用
+  new Promise(resolve => {
+    setTimeout(() => {
+      resolve('Data')
+    }, 2000)
+  }).then((data) => {
+    console.log('网络请求的数据: ' + data);
+    return '第一次处理数据: ' + data
+  }).then(data => {
+    console.log(data);
+    return '第二次处理数据: ' + data
+  }).then(data => {
+    console.log(data);
+    return '第三次处理数据: ' + data
+  }).then(data => {
+    console.log(data);
+  })
+
+</script>
+
+</body>
+</html>
