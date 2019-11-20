@@ -52,14 +52,14 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
   // 从 from 跳转到 to 替换title
   document.title = to.matched[0].meta.title
-  console.log(to);
+  // console.log(to);
   /* next 方法必须调用，正常的跳转路由*/
   next()
 })
 
 // 后置导航钩子 路由跳转后
 router.afterEach((to, from) => {
-  console.log(to);
+  // console.log(to);
 })
 
 export default router

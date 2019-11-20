@@ -13,7 +13,12 @@
     <button @click="clickUser">User</button>
     <button @click="clickProfile">Profile</button>
 
-    <router-view></router-view>
+    <!-- 重新创建动态组件的行为通常是非常有用的，但是在这个案例中，我们更希望那些标签的组件实例能够被在它们第一次被创建的时候缓存下来。为了解决这个问题，我们可以用一个 <keep-alive> 元素将其动态组件包裹起来。 -->
+    <!-- include 和 exclude 属性允许组件有条件地缓存。二者都可以用逗号分隔字符串、正则表达式或一个数组来表示 -->
+    <keep-alive exclude="Profile">
+      <router-view></router-view>
+    </keep-alive>
+
   </div>
 </template>
 

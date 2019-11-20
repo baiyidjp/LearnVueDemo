@@ -14,7 +14,32 @@
 
 <script>
   export default {
-    name: 'Home'
+    name: 'Home',
+    data() {
+      return {
+        path: '/home/news'
+      }
+    },
+    /* 不使用keep-alive组件会重复的创建和销毁，一直调用下面两个回调，使用了就不会 */
+    created() {
+      console.log('Home created');
+    },
+    destroyed() {
+      console.log('Home destroyed');
+    },
+    /* 只有使用了keep-alive才有下面两个回调 */
+    activated() {
+      /* 防止重复push到同一个页面，vue-router3.1会报错 */
+      if (this.$route.path == this.path) {return}
+      this.$router.push(this.path)
+    },
+    deactivated() {
+
+    },
+    beforeRouteLeave (to, from, next) {
+      this.path = this.$route.path
+      next()
+    }
   }
 </script>
 
