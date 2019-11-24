@@ -2,35 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31ff7255-49ce-4311-9ae7-3ffb123fbba4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/.postcssrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/build/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/build/check-versions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/build/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/build/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/build/vue-loader.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/build/webpack.base.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/build/webpack.dev.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/build/webpack.prod.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/config/dev.env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/config/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/config/prod.env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/components/HelloVuex.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/static/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/index-o.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/modules/moduleA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/mutations-types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/mutations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/components/HelloVuex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/components/HelloVuex.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,23 +51,23 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/13-webpack的使用/02-webpack的配置/src/js" />
+      <recent name="$PROJECT_DIR$/05-事件监听" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store" />
       <recent name="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar" />
       <recent name="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets" />
       <recent name="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img" />
       <recent name="$PROJECT_DIR$/14-VueCLI/01-VueCli2Test/src/assets" />
-      <recent name="$PROJECT_DIR$/13-webpack的使用" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/13-webpack的使用/02-webpack的配置/src/js" />
-      <recent name="$PROJECT_DIR$/05-事件监听" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -125,6 +106,7 @@
       <workItem from="1574065453495" duration="3589000" />
       <workItem from="1574216190417" duration="18081000" />
       <workItem from="1574388529085" duration="3396000" />
+      <workItem from="1574564923919" duration="6512000" />
     </task>
     <task id="LOCAL-00001" summary="bind 计算属性">
       <created>1572603805709</created>
