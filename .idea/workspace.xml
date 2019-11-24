@@ -2,10 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31ff7255-49ce-4311-9ae7-3ffb123fbba4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/18-Promise使用/01-Promise的基本使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/18-Promise使用/02-Promise的另外调用方式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/18-Promise使用/03-Promise的链式调用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/18-Promise使用/04-Promise的all的使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/.postcssrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/build/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/build/check-versions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/build/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/build/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/build/vue-loader.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/build/webpack.base.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/build/webpack.dev.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/build/webpack.prod.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/config/dev.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/config/prod.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/components/HelloVuex.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/static/.gitkeep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,10 +45,10 @@
         <option value="Vue Single File" />
         <option value="Vue File" />
         <option value="Copy of Vue Single File Component" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="Vue Single File Component" />
         <option value="HTML File" />
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -99,7 +123,8 @@
       <workItem from="1573783735015" duration="11179000" />
       <workItem from="1573803838868" duration="6274000" />
       <workItem from="1574065453495" duration="3589000" />
-      <workItem from="1574216190417" duration="17308000" />
+      <workItem from="1574216190417" duration="18081000" />
+      <workItem from="1574388529085" duration="3396000" />
     </task>
     <task id="LOCAL-00001" summary="bind 计算属性">
       <created>1572603805709</created>
@@ -178,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574234681848</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="promise">
+      <created>1574239775580</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1574239775580</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +256,7 @@
     <MESSAGE value="Vue Router" />
     <MESSAGE value="Vue Router + keep-alive" />
     <MESSAGE value="tabbar demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="tabbar demo" />
+    <MESSAGE value="promise" />
+    <option name="LAST_COMMIT_MESSAGE" value="promise" />
   </component>
 </project>
