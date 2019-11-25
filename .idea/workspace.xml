@@ -2,16 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31ff7255-49ce-4311-9ae7-3ffb123fbba4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/getters.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/index-o.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/modules/moduleA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/mutations-types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/.postcssrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/build/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/build/check-versions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/build/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/build/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/build/vue-loader.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/build/webpack.base.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/build/webpack.dev.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/build/webpack.prod.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/config/dev.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/config/prod.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/src/network/request.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/static/.gitkeep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/components/HelloVuex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/components/HelloVuex.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +42,8 @@
         <option value="Vue File" />
         <option value="Copy of Vue Single File Component" />
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Vue Single File Component" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -51,7 +66,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
@@ -106,7 +121,9 @@
       <workItem from="1574065453495" duration="3589000" />
       <workItem from="1574216190417" duration="18081000" />
       <workItem from="1574388529085" duration="3396000" />
-      <workItem from="1574564923919" duration="6512000" />
+      <workItem from="1574564923919" duration="6683000" />
+      <workItem from="1574647611621" duration="4218000" />
+      <workItem from="1574653442573" duration="80000" />
     </task>
     <task id="LOCAL-00001" summary="bind 计算属性">
       <created>1572603805709</created>
@@ -192,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574239775580</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="vuex">
+      <created>1574574798291</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1574574798291</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +263,7 @@
     <MESSAGE value="Vue Router + keep-alive" />
     <MESSAGE value="tabbar demo" />
     <MESSAGE value="promise" />
-    <option name="LAST_COMMIT_MESSAGE" value="promise" />
+    <MESSAGE value="vuex" />
+    <option name="LAST_COMMIT_MESSAGE" value="vuex" />
   </component>
 </project>
