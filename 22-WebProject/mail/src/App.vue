@@ -18,5 +18,5 @@
 </script>
 
 <style>
-  @import "assets/css/base.less";
+  @import "assets/css/base.css";
 </style>
