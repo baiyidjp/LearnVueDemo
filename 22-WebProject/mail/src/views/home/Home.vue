@@ -9,12 +9,33 @@
 
 <script>
 
-  import NavigationBar from 'components/common/navigation-bar/NavigationBar';
+  import NavigationBar from '../../components/common/navigation-bar/NavigationBar';
+  import homeRequest from "../../network/home";
 
   export default {
     name: 'Home',
     components: {
       NavigationBar
+    },
+    data() {
+      return {
+        result: null,
+        banner: null,
+        dKeyword: null,
+        keywords: null,
+        recommend: null
+      }
+    },
+    created() {
+      // 请求数据
+      homeRequest.homeMultiData().then(result => {
+        console.log(result)
+        this.result = result
+        this.banner = result.data.banner.list
+        this.dKeyword = result.data.dKeyword.list
+        this.keywords = result.data.keywords.list
+        this.recommend = result.data.recommend.list
+      })
     }
   }
 </script>
