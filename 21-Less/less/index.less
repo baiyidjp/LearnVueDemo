@@ -1,0 +1,91 @@
+/* 1.定义变量 */
+//@color: #ffff00;
+//@width: 200px;
+//@height: 200px;
+
+@import "base";
+
+/* 2.混合函数 */
+/* 可以传参数，参数可以有默认值 */
+.createRadius(@radius: 5px, @border: 1px solid #000000) {
+  border-radius: @radius;
+  border: @border;
+}
+
+/* 3.匹配函数 */
+.createRadius(left_top, @radius: 5px) {
+  border-top-left-radius: @radius;
+}
+
+.createRadius(left_bottom, @radius: 5px) {
+  border-bottom-left-radius: @radius;
+}
+
+.createRadius(right_top, @radius: 5px) {
+  border-top-right-radius: @radius;
+}
+
+.createRadius(right_bottom, @radius: 5px) {
+  border-bottom-right-radius: @radius;
+}
+
+//body {
+//  margin: 0;
+//  padding: 0;
+//}
+
+.div-parents {
+  width: @width;
+  height: @height;
+  background-color: @backgroundColor;
+  font-size: @fontSize;
+  color: @color;
+  .createRadius(10px);
+
+  /* & 代表当前的标签 div */
+  &:hover {
+    background-color: fadeout(@backgroundColor, 50%);
+  }
+
+  .child-div {
+    background-color: #ff00ff;
+    width: @width * 0.5;
+    height: @height * 0.5;
+  }
+
+  .child-p {
+    background-color: orange;
+    width: @width * 0.25;
+    height: @height * 0.25;
+    .createRadius()
+  }
+
+  .child-h2 {
+    background-color: #00ff00;
+    width: @width * 0.25;
+    height: @height * 0.25;
+    .createRadius(20px, 2px solid #ff00ff)
+  }
+}
+
+h3 {
+  background-color: orangered;
+  width: @width * 0.2;
+  height: @height * 0.2;
+}
+
+.test1 {
+  .createRadius(left_top, 20px)
+}
+
+.test2 {
+  .createRadius(left_bottom, 20px)
+}
+
+.test3 {
+  .createRadius(right_top, 20px)
+}
+
+.test4 {
+  .createRadius(right_bottom, 20px)
+}

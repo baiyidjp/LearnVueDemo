@@ -2,30 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31ff7255-49ce-4311-9ae7-3ffb123fbba4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/.postcssrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/build/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/build/check-versions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/build/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/build/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/build/vue-loader.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/build/webpack.base.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/build/webpack.dev.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/build/webpack.prod.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/config/dev.env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/config/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/config/prod.env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/src/network/request.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-axios/axiosdemo/static/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/21-Less/less/base.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/21-Less/less/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/21-Less/less使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/css/base.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/navigation-bar/navigation_bar_back.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/tabbar/cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/tabbar/cart_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/tabbar/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/tabbar/home_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/tabbar/message.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/tabbar/message_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/tabbar/profile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/tabbar/profile_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/common/const.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/common/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/components/common/navigation-bar/NavigationBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/components/common/tabbar/TabBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/components/common/tabbar/TabBarItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/components/content/MainTabBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/views/cart/Cart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/views/category/Category.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/views/home/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/views/profile/Profile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/less.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,14 +49,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Less File" />
         <option value="Vue Single File" />
         <option value="Vue File" />
         <option value="Copy of Vue Single File Component" />
-        <option value="CSS File" />
-        <option value="Vue Single File Component" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Less File" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -66,8 +78,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/naviagtion-bar" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
@@ -78,11 +90,11 @@
       <recent name="$PROJECT_DIR$/05-事件监听" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/19-Vuex/VuexDemo/src/store" />
-      <recent name="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img/tabbar" />
-      <recent name="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets" />
-      <recent name="$PROJECT_DIR$/17-TabBar/TabBarDemo/src/assets/img" />
-      <recent name="$PROJECT_DIR$/14-VueCLI/01-VueCli2Test/src/assets" />
+      <recent name="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/naviagtion-bar" />
+      <recent name="$PROJECT_DIR$/22-WebProject/mail/src/views" />
+      <recent name="$PROJECT_DIR$/22-WebProject/mail/src/components/common" />
+      <recent name="$PROJECT_DIR$/22-WebProject/mail/src/assets" />
+      <recent name="$PROJECT_DIR$/22-WebProject/mail" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -123,7 +135,8 @@
       <workItem from="1574388529085" duration="3396000" />
       <workItem from="1574564923919" duration="6683000" />
       <workItem from="1574647611621" duration="4218000" />
-      <workItem from="1574653442573" duration="80000" />
+      <workItem from="1574653442573" duration="7665000" />
+      <workItem from="1574672693427" duration="5156000" />
     </task>
     <task id="LOCAL-00001" summary="bind 计算属性">
       <created>1572603805709</created>
@@ -216,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574574798291</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="axios demo">
+      <created>1574653575065</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1574653575065</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +284,7 @@
     <MESSAGE value="tabbar demo" />
     <MESSAGE value="promise" />
     <MESSAGE value="vuex" />
-    <option name="LAST_COMMIT_MESSAGE" value="vuex" />
+    <MESSAGE value="axios demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="axios demo" />
   </component>
 </project>
