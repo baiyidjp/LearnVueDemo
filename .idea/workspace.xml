@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31ff7255-49ce-4311-9ae7-3ffb123fbba4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/components/common/swiper/Swiper.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/components/common/swiper/SwiperItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/components/common/swiper/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/network/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/network/request.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/cart/tick.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/common/back.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/common/collect.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/common/placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/common/top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/detail/detail_bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/home/recommend_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/views/home/components/HomeFeatureView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22-WebProject/mail/src/views/home/components/HomeTabControl.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/peng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/peng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/22-WebProject/mail/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/22-WebProject/mail/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22-WebProject/mail/src/components/common/navigation-bar/NavigationBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22-WebProject/mail/src/components/common/navigation-bar/NavigationBar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/22-WebProject/mail/src/views/home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22-WebProject/mail/src/views/home/Home.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +31,8 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="Less File" />
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -50,23 +54,23 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/22-WebProject/mail/src/network" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/13-webpack的使用/02-webpack的配置/src/js" />
-      <recent name="$PROJECT_DIR$/05-事件监听" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/22-WebProject/mail/src/assets/img" />
+      <recent name="$PROJECT_DIR$/22-WebProject/mail/src/assets/css" />
       <recent name="$PROJECT_DIR$/22-WebProject/mail/src/network" />
       <recent name="$PROJECT_DIR$/22-WebProject/mail/src/components/common" />
       <recent name="$PROJECT_DIR$/22-WebProject/mail/src/assets/img/naviagtion-bar" />
-      <recent name="$PROJECT_DIR$/22-WebProject/mail/src/views" />
-      <recent name="$PROJECT_DIR$/22-WebProject/mail/src/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/13-webpack的使用/02-webpack的配置/src/js" />
+      <recent name="$PROJECT_DIR$/05-事件监听" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -108,7 +112,8 @@
       <workItem from="1574564923919" duration="6683000" />
       <workItem from="1574647611621" duration="4218000" />
       <workItem from="1574653442573" duration="7665000" />
-      <workItem from="1574672693427" duration="8879000" />
+      <workItem from="1574672693427" duration="9315000" />
+      <workItem from="1574742591522" duration="4685000" />
     </task>
     <task id="LOCAL-00001" summary="bind 计算属性">
       <created>1572603805709</created>

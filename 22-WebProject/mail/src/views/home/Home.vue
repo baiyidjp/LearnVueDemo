@@ -12,6 +12,7 @@
     <home-recommend-view :recommend="recommend"></home-recommend-view>
     <home-feature-view></home-feature-view>
     <home-tab-control></home-tab-control>
+    <tabs class="tabs" :tabs-title="tabsTitle"></tabs>
     <ul>
       <li></li>
       <li></li>
@@ -121,11 +122,12 @@
 <script>
 
   import homeRequest from "../../network/home";
+
   import NavigationBar from '../../components/common/navigation-bar/NavigationBar';
   import HomeSwiper from "./components/HomeSwiper";
   import HomeRecommendView from "./components/HomeRecommendView";
   import HomeFeatureView from "./components/HomeFeatureView";
-  import HomeTabControl from "./components/HomeTabControl";
+  import Tabs from "../../components/content/Tabs/Tabs";
 
   export default {
     name: 'Home',
@@ -134,15 +136,18 @@
       HomeSwiper,
       HomeRecommendView,
       HomeFeatureView,
-      HomeTabControl
+      Tabs
     },
     data() {
       return {
+        // home data
         result: {},
         banner: [],
         dKeyword: [],
         keywords: [],
-        recommend: []
+        recommend: [],
+        // tabs title
+        tabsTitle: ['流行', '新款', '精选']
       }
     },
     created() {
@@ -163,6 +168,11 @@
 
   #home {
     padding-top: 44px;
+  }
+
+  .tabs {
+    position: sticky;
+    top: 44px;
   }
 
 </style>
