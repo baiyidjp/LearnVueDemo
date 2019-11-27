@@ -11,111 +11,15 @@
     <home-swiper :banner="banner"></home-swiper>
     <home-recommend-view :recommend="recommend"></home-recommend-view>
     <home-feature-view></home-feature-view>
-    <home-tab-control></home-tab-control>
-    <tabs class="tabs" :tabs-title="tabsTitle"></tabs>
+    <tabs class="tabs" :tabs-title="tabsTitle" @tabClick="tabsClick"></tabs>
+    <goods-list :goods-list="currentGoodList"/>
     <ul>
       <li></li>
       <li></li>
       <li></li>
       <li></li>
       <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
     </ul>
-
   </div>
 </template>
 
@@ -127,7 +31,8 @@
   import HomeSwiper from "./components/HomeSwiper";
   import HomeRecommendView from "./components/HomeRecommendView";
   import HomeFeatureView from "./components/HomeFeatureView";
-  import Tabs from "../../components/content/Tabs/Tabs";
+  import Tabs from "../../components/content/tabs/Tabs";
+  import GoodsList from "../../components/content/goods/GoodsList";
 
   export default {
     name: 'Home',
@@ -136,7 +41,8 @@
       HomeSwiper,
       HomeRecommendView,
       HomeFeatureView,
-      Tabs
+      Tabs,
+      GoodsList
     },
     data() {
       return {
@@ -147,19 +53,59 @@
         keywords: [],
         recommend: [],
         // tabs title
-        tabsTitle: ['流行', '新款', '精选']
+        tabsTitle: ['流行', '新款', '精选'],
+        // goods data
+        goods: [
+          {type: 'pop', page: 0, list: []},
+          {type: 'new', page: 0, list: []},
+          {type: 'sell', page: 0, list: []}
+        ],
+        currentTabIndex: 0
       }
     },
     created() {
       // 请求数据
-      homeRequest.homeMultiData().then(result => {
-        console.log(result)
-        this.result = result
-        this.banner = result.data.banner.list
-        this.dKeyword = result.data.dKeyword.list
-        this.keywords = result.data.keywords.list
-        this.recommend = result.data.recommend.list
-      })
+      this.getHomeMultiData()
+
+      // 请求商品数据
+      this.getHomeGoodsData(0)
+      this.getHomeGoodsData(1)
+      this.getHomeGoodsData(2)
+
+    },
+    computed: {
+      currentGoodList() {
+        return this.goods[this.currentTabIndex].list
+      }
+    },
+    methods: {
+      // 获取首页基本数据
+      getHomeMultiData() {
+        homeRequest.homeMultiData().then(result => {
+          console.log(result)
+          this.result = result
+          this.banner = result.data.banner.list
+          this.dKeyword = result.data.dKeyword.list
+          this.keywords = result.data.keywords.list
+          this.recommend = result.data.recommend.list
+        })
+      },
+
+      // 商品数据
+      getHomeGoodsData(index) {
+        const type = this.goods[index].type
+        const page = this.goods[index].page + 1
+        homeRequest.homeGoodsData(type, page).then(result => {
+          console.log(result);
+          this.goods[index].list.push(...result.data.list)
+          this.goods[index].page  += 1
+        })
+      },
+
+      // 监听tabs的点击
+      tabsClick(index) {
+        this.currentTabIndex = index
+      }
     }
   }
 </script>
