@@ -8,11 +8,13 @@
       backgroundColor="#ff8198"
       titleColor="#ffffff">
     </navigation-bar>
-    <home-swiper :banner="banner"></home-swiper>
-    <home-recommend-view :recommend="recommend"></home-recommend-view>
-    <home-feature-view></home-feature-view>
-    <tabs class="tabs" :tabs-title="tabsTitle" @tabClick="tabsClick"></tabs>
-    <goods-list :goods-list="currentGoodList"/>
+    <scroll class="scroll-content">
+      <home-swiper :banner="banner"></home-swiper>
+      <home-recommend-view :recommend="recommend"></home-recommend-view>
+      <home-feature-view></home-feature-view>
+      <tabs class="tabs" :tabs-title="tabsTitle" @tabClick="tabsClick"></tabs>
+      <goods-list :goods-list="currentGoodList"/>
+    </scroll>
     <ul>
       <li></li>
       <li></li>
@@ -28,6 +30,7 @@
   import homeRequest from "../../network/home";
 
   import NavigationBar from '../../components/common/navigation-bar/NavigationBar';
+  import Scroll from "../../components/common/scroll/Scroll";
   import HomeSwiper from "./components/HomeSwiper";
   import HomeRecommendView from "./components/HomeRecommendView";
   import HomeFeatureView from "./components/HomeFeatureView";
@@ -38,6 +41,7 @@
     name: 'Home',
     components: {
       NavigationBar,
+      Scroll,
       HomeSwiper,
       HomeRecommendView,
       HomeFeatureView,
@@ -114,6 +118,25 @@
 
   #home {
     padding-top: 44px;
+    /* 适配整个page高度是100屏幕高 */
+    height: 100vh;
+    position: relative;
+  }
+
+  /*.scroll-content {*/
+  /*  height: calc(100% - 44px - 49px);*/
+  /*  overflow: hidden;*/
+  /*  margin-top: 44px;*/
+  /*}*/
+
+  .scroll-content {
+    overflow: hidden;
+    position: absolute;
+
+    top: 44px;
+    bottom: 49px;
+    left: 0;
+    right: 0;
   }
 
   .tabs {
