@@ -8,7 +8,7 @@
       backgroundColor="#ff8198"
       titleColor="#ffffff">
     </navigation-bar>
-    <scroll class="scroll-content" ref="homeScroll" :probe-type="3" @scroll="scrollViewDidScroll" :pull-up-load="true" @pullingUp="loadMoreData">
+    <scroll class="scroll-content" ref="scroll" :probe-type="3" @scroll="scrollViewDidScroll" :pull-up-load="true" @pullingUp="loadMoreData">
       <home-swiper :banner="banner"></home-swiper>
       <home-recommend-view :recommend="recommend"></home-recommend-view>
       <home-feature-view></home-feature-view>
@@ -83,6 +83,12 @@
       this.getHomeGoodsData(1)
       this.getHomeGoodsData(2)
 
+      // 监听goodsListItem中的图片加载成功
+      this.$bus.$on('imageLoadDone', () => {
+        // 监听到图片加载成功 实时改变 better-scroll的scrollerHeight
+        this.$refs.scroll.refresh()
+      })
+
     },
     computed: {
       currentGoodList() {
@@ -111,7 +117,7 @@
           this.goods[index].list.push(...result.data.list)
           this.goods[index].page  = result.data.page
           // 结束上拉刷新
-          this.$refs.homeScroll.finishPullUp()
+          this.$refs.scroll.finishPullUp()
         })
       },
 
@@ -123,7 +129,7 @@
       // 回到顶部的点击
       backTopClick() {
         // 拿到scroll组件
-        this.$refs.homeScroll.scrollTo(0, 0)
+        this.$refs.scroll.scrollTo(0, 0)
       },
 
       // 滚动

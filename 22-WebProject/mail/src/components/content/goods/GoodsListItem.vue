@@ -1,6 +1,6 @@
 <template>
   <div class="goods">
-    <img class="goods-image" :src="goods.show.img" alt="">
+    <img class="goods-image" :src="goods.show.img" alt="" @load="imageLoadDone">
     <div class="goods-title">{{ goods.title }}</div>
     <div class="goods-info">
       <div class="price">{{ goods.price }}</div>
@@ -15,6 +15,12 @@
     name: 'GoodsListItem',
     props: {
       goods: Object
+    },
+    methods: {
+      imageLoadDone() {
+        // 事件总线 发送事件$emit 监听事件$on
+        this.$bus.$emit('imageLoadDone')
+      }
     }
   }
 </script>
