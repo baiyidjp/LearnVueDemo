@@ -47,6 +47,8 @@
   .item {
     flex: 1;
     text-align: center;
+    color: #666666;
+    font-weight: normal;
   }
 
   .item span {

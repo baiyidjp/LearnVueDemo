@@ -1,6 +1,6 @@
 <template>
   <div class="navigation-bar" :style="navigationBarStyle">
-    <div class="left-l" v-if="isShowBack">
+    <div class="left-l" v-if="isShowBack" @click="backClick">
       <slot name="left-l">
         <img src="~assets/img/navigation-bar/navigation_bar_back.svg">
       </slot>
@@ -56,6 +56,11 @@
       titleStyle() {
         return {color: this.titleColor, fontSize: this.titleFontSize, fontWeight: this.titleFontWeight}
       }
+    },
+    methods: {
+      backClick() {
+        this.$router.back()
+      }
     }
   }
 </script>
@@ -69,11 +74,11 @@
     align-items: center;
     box-shadow: 0 0.3px 0.3px rgba(0, 0, 0, .1);
 
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 100;
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*top: 0;*/
+    /*z-index: 100;*/
   }
 
   .left-l,.left-r,.right-l,.right-r {
