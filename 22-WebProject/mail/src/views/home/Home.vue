@@ -42,6 +42,8 @@
 
   import BackTop from "../../components/content/backTop/BackTop";
 
+  import {debounce} from "../../common/utils";
+
   export default {
     name: 'Home',
     components: {
@@ -82,13 +84,18 @@
       this.getHomeGoodsData(0)
       this.getHomeGoodsData(1)
       this.getHomeGoodsData(2)
+    },
+    // this.$refs.scroll 在created中可能拿不到对应的组件
+    mounted() {
 
+      const refresh = debounce(this.$refs.scroll.refresh)
       // 监听goodsListItem中的图片加载成功
       this.$bus.$on('imageLoadDone', () => {
         // 监听到图片加载成功 实时改变 better-scroll的scrollerHeight
-        this.$refs.scroll.refresh()
+        // this.$refs.scroll.refresh()
+        // 使用防抖函数 限制刷新频率
+        refresh()
       })
-
     },
     computed: {
       currentGoodList() {
@@ -138,8 +145,8 @@
         this.isShowBackTop = (position.y < -600)
       },
 
+      // 加载更多
       loadMoreData() {
-        console.log('loadMoreData')
         this.getHomeGoodsData(this.currentTabIndex)
       }
     }

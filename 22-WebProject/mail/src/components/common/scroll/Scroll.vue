@@ -36,22 +36,30 @@
       })
 
       /* 监听滚动 */
-      this.scroll.on('scroll', position => {
-        this.$emit('scroll', position)
-      })
+      if (this.probeType === 2 || this.probeType === 3) {
+        this.scroll.on('scroll', position => {
+          this.$emit('scroll', position)
+        })
+      }
 
       /* 上拉加载 */
-      this.scroll.on('pullingUp', () => {
-        this.$emit('pullingUp')
-      })
+      if (this.pullUpLoad) {
+        this.scroll.on('pullingUp', () => {
+          this.$emit('pullingUp')
+        })
+      }
     },
     methods: {
       // 滚动
       scrollTo(x, y, duration = 250) {
-        this.scroll.scrollTo(x, y, duration)
+        this.scroll && this.scroll.scrollTo(x, y, duration)
       },
       finishPullUp() {
-        this.scroll.finishPullUp()
+        this.scroll && this.scroll.finishPullUp()
+      },
+      refresh() {
+        console.log('refresh');
+        this.scroll && this.scroll.refresh()
       }
     }
   }
