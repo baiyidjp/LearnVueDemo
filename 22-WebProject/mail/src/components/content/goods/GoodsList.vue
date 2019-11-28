@@ -1,6 +1,6 @@
 <template>
   <div class="goods-list">
-    <goods-list-item v-for="item in goodsList" :goods="item" :key="item.iid"/>
+    <goods-list-item v-for="item in goodsList" :goods="item" :key="item.show.img"/>
   </div>
 </template>
 
@@ -25,7 +25,7 @@
 
 </script>
 
-<style>
+<style scoped>
 
   .goods-list {
     display: flex;

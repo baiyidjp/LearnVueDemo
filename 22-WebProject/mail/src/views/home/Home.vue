@@ -8,13 +8,15 @@
       backgroundColor="#ff8198"
       titleColor="#ffffff">
     </navigation-bar>
-    <scroll class="scroll-content">
+    <scroll class="scroll-content" ref="homeScroll" :probe-type="3" @scroll="scrollViewDidScroll" :pull-up-load="true" @pullingUp="loadMoreData">
       <home-swiper :banner="banner"></home-swiper>
       <home-recommend-view :recommend="recommend"></home-recommend-view>
       <home-feature-view></home-feature-view>
       <tabs class="tabs" :tabs-title="tabsTitle" @tabClick="tabsClick"></tabs>
       <goods-list :goods-list="currentGoodList"/>
     </scroll>
+    <!-- 组件要加原生事件要跟上.native -->
+    <back-top v-show="isShowBackTop" @click.native="backTopClick"/>
     <ul>
       <li></li>
       <li></li>
@@ -30,12 +32,15 @@
   import homeRequest from "../../network/home";
 
   import NavigationBar from '../../components/common/navigation-bar/NavigationBar';
+
   import Scroll from "../../components/common/scroll/Scroll";
   import HomeSwiper from "./components/HomeSwiper";
   import HomeRecommendView from "./components/HomeRecommendView";
   import HomeFeatureView from "./components/HomeFeatureView";
   import Tabs from "../../components/content/tabs/Tabs";
   import GoodsList from "../../components/content/goods/GoodsList";
+
+  import BackTop from "../../components/content/backTop/BackTop";
 
   export default {
     name: 'Home',
@@ -46,7 +51,8 @@
       HomeRecommendView,
       HomeFeatureView,
       Tabs,
-      GoodsList
+      GoodsList,
+      BackTop
     },
     data() {
       return {
@@ -64,7 +70,8 @@
           {type: 'new', page: 0, list: []},
           {type: 'sell', page: 0, list: []}
         ],
-        currentTabIndex: 0
+        currentTabIndex: 0,
+        isShowBackTop: false
       }
     },
     created() {
@@ -102,13 +109,32 @@
         homeRequest.homeGoodsData(type, page).then(result => {
           console.log(result);
           this.goods[index].list.push(...result.data.list)
-          this.goods[index].page  += 1
+          this.goods[index].page  = result.data.page
+          // 结束上拉刷新
+          this.$refs.homeScroll.finishPullUp()
         })
       },
 
       // 监听tabs的点击
       tabsClick(index) {
         this.currentTabIndex = index
+      },
+
+      // 回到顶部的点击
+      backTopClick() {
+        // 拿到scroll组件
+        this.$refs.homeScroll.scrollTo(0, 0)
+      },
+
+      // 滚动
+      scrollViewDidScroll(position) {
+        // 设置滚动到顶部的显示与隐藏
+        this.isShowBackTop = (position.y < -600)
+      },
+
+      loadMoreData() {
+        console.log('loadMoreData')
+        this.getHomeGoodsData(this.currentTabIndex)
       }
     }
   }
@@ -123,12 +149,6 @@
     position: relative;
   }
 
-  /*.scroll-content {*/
-  /*  height: calc(100% - 44px - 49px);*/
-  /*  overflow: hidden;*/
-  /*  margin-top: 44px;*/
-  /*}*/
-
   .scroll-content {
     overflow: hidden;
     position: absolute;
@@ -138,6 +158,17 @@
     left: 0;
     right: 0;
   }
+
+  /*#home {*/
+  /*  !* 适配整个page高度是100屏幕高 *!*/
+  /*  height: 100vh;*/
+  /*}*/
+
+  /*.scroll-content {*/
+  /*  height: calc(100% - 44px - 49px);*/
+  /*  overflow: hidden;*/
+  /*  margin-top: 44px;*/
+  /*}*/
 
   .tabs {
     position: sticky;
