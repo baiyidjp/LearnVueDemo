@@ -112,7 +112,6 @@
     },
     deactivated() {
       this.currentScrollY = this.$refs.scroll.getScrollY()
-      console.log(this.currentScrollY);
     },
     computed: {
       currentGoodList() {
@@ -123,7 +122,6 @@
       // 获取首页基本数据
       getHomeMultiData() {
         homeRequest.homeMultiData().then(result => {
-          console.log(result)
           this.result = result
           this.banner = result.data.banner.list
           this.dKeyword = result.data.dKeyword.list
@@ -137,7 +135,6 @@
         const type = this.goods[index].type
         const page = this.goods[index].page + 1
         homeRequest.homeGoodsData(type, page).then(result => {
-          console.log(result);
           this.goods[index].list.push(...result.data.list)
           this.goods[index].page  = result.data.page
           // 结束上拉刷新
@@ -174,7 +171,6 @@
       // 监听banner的图片加载完成
       swiperImageLoadDone() {
         this.tabsOffsetTop = this.$refs.tabs.$el.offsetTop
-        console.log(this.tabsOffsetTop);
       }
     }
   }
