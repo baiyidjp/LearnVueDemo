@@ -43,6 +43,7 @@
   .goods-image {
     width: 100%;
     border-radius: 5px;
+    height: 265px;
   }
 
   .goods-title {

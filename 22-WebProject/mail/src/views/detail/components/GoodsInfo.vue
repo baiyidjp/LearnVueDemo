@@ -1,6 +1,7 @@
 <template>
   <div class="goods-info">
     <div class="goods-title">{{ goodsInfo.title }}</div>
+    <div class="goods-desc">{{ goodsInfo.desc }}</div>
     <div class="price-container">
       <div class="now-price">{{ goodsInfo.price }}</div>
       <div class="old-price">{{ goodsInfo.oldPrice }}</div>
@@ -36,7 +37,7 @@
 <style scoped>
 
   .goods-info {
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     border-bottom: 5px solid #fafafa;
   }
 
@@ -44,9 +45,17 @@
     font-size: 18px;
     color: #4a4a4a;
   }
+
+  .goods-desc {
+    color: #9b9b9b;
+    font-size: 10px;
+    white-space: pre-line;
+    padding-top: 10px;
+  }
+
   .price-container {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     padding: 10px 0;
   }
   .now-price {
@@ -60,7 +69,6 @@
     color: #9b9b9b;
     text-decoration: line-through;
     font-size: 13px;
-    padding-top: 3px;
     margin-right: 5px;
   }
 
@@ -73,7 +81,6 @@
     line-height: 20px;
     border-radius: 5px;
     padding: 1px 1px;
-    margin-bottom: 3px;
   }
 
   .middle-container {
@@ -94,14 +101,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     color: #4a4a4a;
     font-size: 15px;
-    padding: 20px 0 15px 0;
+    padding: 20px 0 5px 0;
   }
 
   .service {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
   }
 
   .bottom-container img {

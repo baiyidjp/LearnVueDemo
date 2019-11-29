@@ -36,4 +36,8 @@
     overflow: hidden;
   }
 
+  .detail-swiper .img {
+    object-fit: fill;
+  }
+
 </style>
