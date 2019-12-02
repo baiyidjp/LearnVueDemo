@@ -52,7 +52,6 @@
   }
 
   .images-desc {
-    color: #666666;
     font-size: 12px;
     letter-spacing: 1px;
     padding: 0 0 10px 10px;

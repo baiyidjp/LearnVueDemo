@@ -10,6 +10,7 @@
       <goods-info :goods-info="goodsInfo"/>
       <goods-shop-info :shop-info="shopInfo"/>
       <goods-images :goods-images-info="goodsImagesInfo" @imageLoad="goodsImageLoad"/>
+      <goods-param-info :param-info="goodsParamInfo"/>
     </scroll>
   </div>
 </template>
@@ -26,6 +27,7 @@
   import GoodsInfo from "./components/GoodsInfo";
   import GoodsShopInfo from "./components/GoodsShopInfo";
   import GoodsImages from "./components/GoodsImages";
+  import GoodsParamInfo from "./components/GoodsParamInfo";
 
   import {debounce} from "../../common/utils";
 
@@ -38,10 +40,12 @@
         banner: [],
         goodsInfo: {},
         shopInfo: {},
-        goodsImagesInfo: {}
+        goodsImagesInfo: {},
+        goodsParamInfo: {}
       }
     },
     components: {
+      GoodsParamInfo,
       GoodsImages,
       NavigationBar,
       Tabs,
@@ -73,6 +77,8 @@
           this.shopInfo = this.getShopInfo(result)
           // 详细图片信息
           this.goodsImagesInfo = result.detailInfo
+          // 商品的参数和尺码信息
+          this.goodsParamInfo = result.itemParams
         })
       },
 
