@@ -18,13 +18,6 @@
     </scroll>
     <!-- 组件要加原生事件要跟上.native -->
     <back-top v-show="isShowBackTop" @click.native="backTopClick"/>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
   </div>
 </template>
 
@@ -107,6 +100,7 @@
     },
     /* 记录页面的滚动距离，当页面变为活跃时，重新滚动到记录的距离 */
     activated() {
+      console.log(this.currentScrollY);
       this.$refs.scroll.scrollTo(0, this.currentScrollY, 0)
       this.$refs.scroll.refresh()
     },

@@ -5,10 +5,11 @@
         <tabs class="detail-tabs" :tabs-title="tabsTitle" @tabClick="itemClick"></tabs>
       </div>
     </navigation-bar>
-    <scroll class="scroll-content">
+    <scroll class="scroll-content" ref="scroll">
       <detail-swiper :banner="banner"></detail-swiper>
       <goods-info :goods-info="goodsInfo"/>
       <goods-shop-info :shop-info="shopInfo"/>
+      <goods-images :goods-images-info="goodsImagesInfo" @imageLoad="goodsImageLoad"/>
     </scroll>
   </div>
 </template>
@@ -24,6 +25,9 @@
   import DetailSwiper from "./components/DetailSwiper";
   import GoodsInfo from "./components/GoodsInfo";
   import GoodsShopInfo from "./components/GoodsShopInfo";
+  import GoodsImages from "./components/GoodsImages";
+
+  import {debounce} from "../../common/utils";
 
   export default {
     name: 'GoodsDetail',
@@ -33,10 +37,12 @@
         iid: '',
         banner: [],
         goodsInfo: {},
-        shopInfo: {}
+        shopInfo: {},
+        goodsImagesInfo: {}
       }
     },
     components: {
+      GoodsImages,
       NavigationBar,
       Tabs,
       Scroll,
@@ -65,6 +71,8 @@
           this.goodsInfo = this.getGoodsInfoData(result)
           // 商家信息
           this.shopInfo = this.getShopInfo(result)
+          // 详细图片信息
+          this.goodsImagesInfo = result.detailInfo
         })
       },
 
@@ -88,6 +96,11 @@
         info.goodsCount = result.shopInfo.cGoods
         info.score = result.shopInfo.score
         return info
+      },
+
+      goodsImageLoad() {
+        const refresh = debounce(this.$refs.scroll.refresh)
+        refresh()
       }
     }
   }
@@ -98,6 +111,8 @@
   #goods-detail {
     height: 100vh;
     position: relative;
+    z-index: 999;
+    background-color: #fff;
   }
 
   .detail-tabs {
@@ -109,7 +124,7 @@
     position: absolute;
 
     top: 44px;
-    bottom: 49px;
+    bottom: 0;
     left: 0;
     right: 0;
   }

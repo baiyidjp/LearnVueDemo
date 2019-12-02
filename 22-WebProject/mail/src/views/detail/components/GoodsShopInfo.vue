@@ -23,6 +23,9 @@
         </div>
       </div>
     </div>
+    <div class="enter-shop">
+      <div>进店逛逛</div>
+    </div>
   </div>
 </template>
 
@@ -167,5 +170,22 @@
     color: #f13e3a;
   }
 
+  .enter-shop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .enter-shop div {
+    background-color: #f4f4f4;
+    width: 120px;
+    height: 30px;
+    color: #666666;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+  }
 
 </style>

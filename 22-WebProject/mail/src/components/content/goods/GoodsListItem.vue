@@ -1,6 +1,6 @@
 <template>
   <div class="goods" @click="goodsItemClick">
-    <img class="goods-image" :src="goods.show.img" alt="" @load="imageLoadDone">
+    <img class="goods-image" :src="goods.show.img" alt="" @load="imageLoadDone" ref="image">
     <div class="goods-title">{{ goods.title }}</div>
     <div class="goods-info">
       <div class="price">{{ goods.price }}</div>
@@ -29,6 +29,14 @@
           }
         })
       }
+    },
+    computed: {
+    },
+    mounted() {
+      // 动态设置图片的宽高
+      const goodsImage = this.$refs.image
+      const height = goodsImage.getBoundingClientRect().width*264/176
+      goodsImage.style.height = height + 'px'
     }
   }
 </script>
@@ -43,7 +51,6 @@
   .goods-image {
     width: 100%;
     border-radius: 5px;
-    height: 265px;
   }
 
   .goods-title {
