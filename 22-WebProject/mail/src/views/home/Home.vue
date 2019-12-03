@@ -100,12 +100,14 @@
     },
     /* 记录页面的滚动距离，当页面变为活跃时，重新滚动到记录的距离 */
     activated() {
-      console.log(this.currentScrollY);
-      this.$refs.scroll.scrollTo(0, this.currentScrollY, 0)
+      // console.log(this.currentScrollY);
       this.$refs.scroll.refresh()
+      // 先刷新后滚动 若先滚动后刷新会导致页面一直滚到到 0 0
+      this.$refs.scroll.scrollTo(0, this.currentScrollY, 0)
     },
     deactivated() {
       this.currentScrollY = this.$refs.scroll.getScrollY()
+      // console.log(this.currentScrollY);
     },
     computed: {
       currentGoodList() {

@@ -22,10 +22,18 @@
         currentIndex: 0
       }
     },
+    watch: {
+    //  使用watch可以监听值得改变
+    },
     methods: {
       itemClick(index) {
+        if (this.currentIndex == index) { return }
         this.currentIndex = index
         this.$emit('tabClick', index)
+      },
+      refreshCurrentIndex(index) {
+        if (this.currentIndex == index) { return }
+        this.currentIndex = index
       }
     }
   }

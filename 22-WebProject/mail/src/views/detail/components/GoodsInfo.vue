@@ -1,7 +1,6 @@
 <template>
   <div class="goods-info">
     <div class="goods-title">{{ goodsInfo.title }}</div>
-    <div class="goods-desc">{{ goodsInfo.desc }}</div>
     <div class="price-container">
       <div class="now-price">{{ goodsInfo.price }}</div>
       <div class="old-price">{{ goodsInfo.oldPrice }}</div>
@@ -45,15 +44,6 @@
     font-size: 18px;
     color: #4a4a4a;
     letter-spacing: 1px;
-  }
-
-  .goods-desc {
-    color: #9b9b9b;
-    font-size: 10px;
-    white-space: pre-line;
-    letter-spacing: 1px;
-    line-height: 15px;
-    padding-top: 10px;
   }
 
   .price-container {

@@ -42,6 +42,10 @@
         })
       }
 
+      this.scroll.on('scrollEnd', position => {
+        this.$emit('scrollEnd', position)
+      })
+
       /* 上拉加载 */
       if (this.pullUpLoad) {
         this.scroll.on('pullingUp', () => {

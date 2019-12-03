@@ -1,15 +1,15 @@
 <template>
-  <div class="goods-list">
-    <goods-list-item :is-home="true" v-for="item in goodsList" :goods="item" :key="item.show.img"/>
+  <div class="goods-recommend">
+    <goods-list-item :is-home="false" v-for="item in goodsList" :goods="item" :key="item.image"/>
   </div>
 </template>
 
 <script>
 
-  import GoodsListItem from "./GoodsListItem";
+  import GoodsListItem from "../../../components/content/goods/GoodsListItem";
 
   export default {
-    name: 'GoodsList',
+    name: 'GoodsDetailRecommend',
     components: {
       GoodsListItem
     },
@@ -22,12 +22,12 @@
       }
     }
   }
-
 </script>
 
 <style scoped>
 
-  .goods-list {
+  .goods-recommend {
+    border-bottom: 5px solid #fafafa;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

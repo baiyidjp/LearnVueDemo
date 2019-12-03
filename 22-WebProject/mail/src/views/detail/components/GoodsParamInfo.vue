@@ -1,6 +1,6 @@
 <template>
   <div id="goods-param">
-    <div class="rule-container" v-if="Object.keys(paramInfo.rule).length !== 0">
+    <div class="rule-container" v-if="isShowRule">
       <div class="rule-key">{{ paramInfo.rule.key }}</div>
       <div class="rule-disclaimer">{{ paramInfo.rule.disclaimer }}</div>
       <table class="rule-table" v-for="(table, tIndex) in paramInfo.rule.tables" :key="tIndex">
@@ -9,7 +9,7 @@
         </tr>
       </table>
     </div>
-    <div class="param-container" v-if="Object.keys(paramInfo.info).length !== 0">
+    <div class="param-container" v-if="isShowInfo">
       <div class="param-key">{{ paramInfo.info.key }}</div>
       <table class="param-table">
         <tr class="param-tr" v-for="(item, trIndex) in paramInfo.info.set" :key="trIndex">
@@ -31,11 +31,26 @@
           return {}
         }
       }
+    },
+    computed: {
+
+      isShowRule() {
+        if (Object.keys(this.paramInfo).length === 0) {
+          return false
+        }
+        return Object.keys(this.paramInfo.rule).length !== 0
+      },
+      isShowInfo() {
+        if (Object.keys(this.paramInfo).length === 0) {
+          return false
+        }
+        return Object.keys(this.paramInfo.info).length !== 0
+      }
     }
   }
 </script>
 
-<style scoped>
+<style scoped lang="less">
 
   #goods-param {
     padding: 0 10px;

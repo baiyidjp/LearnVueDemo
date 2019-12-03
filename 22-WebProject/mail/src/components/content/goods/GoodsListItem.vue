@@ -1,6 +1,6 @@
 <template>
   <div class="goods" @click="goodsItemClick">
-    <img class="goods-image" :src="goods.show.img" alt="" @load="imageLoadDone" ref="image">
+    <img class="goods-image" :src="imageUrl" alt="" @load="imageLoadDone" ref="image">
     <div class="goods-title">{{ goods.title }}</div>
     <div class="goods-info">
       <div class="price">{{ goods.price }}</div>
@@ -14,7 +14,13 @@
   export default {
     name: 'GoodsListItem',
     props: {
-      goods: Object
+      goods: Object,
+      isHome: Boolean
+    },
+    computed: {
+      imageUrl() {
+        return this.isHome ? this.goods.show.img : this.goods.image
+      }
     },
     methods: {
       imageLoadDone() {
@@ -25,12 +31,10 @@
         this.$router.push({
           path: '/detail',
           query: {
-            iid: this.goods.iid
+            iid: this.isHome ? this.goods.iid : this.goods.item_id
           }
         })
       }
-    },
-    computed: {
     },
     mounted() {
       // 动态设置图片的宽高

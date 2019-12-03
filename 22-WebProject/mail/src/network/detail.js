@@ -11,4 +11,10 @@ detailRequest.goodsDetail = (iid) => {
   })
 }
 
+detailRequest.goodsDetailRecommend = () => {
+  return request({
+    url: '/recommend'
+  })
+}
+
 export default detailRequest
