@@ -15,6 +15,7 @@
       <goods-detail-recommend :goods-list="goodsDetailRecommendInfo" ref="recommend"/>
     </scroll>
     <back-top v-show="isShowBackTop" @click.native="backTopClick"/>
+    <goods-detail-bottom/>
   </div>
 </template>
 
@@ -34,6 +35,8 @@
   import GoodsDetailComment from "./components/GoodsDetailComment";
   import GoodsDetailRecommend from "./components/GoodsDetailRecommend";
 
+  import GoodsDetailBottom from "./components/GoodsDetailBottom";
+
   import {BackToTopMixin} from "../../common/mixin";
 
   import {debounce} from "../../common/utils";
@@ -49,6 +52,7 @@
           comment: 0,
           recommend: 0
         },
+        // 点击tab时 是否触发滚动改变tab的选中
         isScrollToRefreshTabs: true,
         iid: '',
         banner: [],
@@ -62,6 +66,7 @@
     },
     mixins: [BackToTopMixin],
     components: {
+      GoodsDetailBottom,
       NavigationBar,
       Tabs,
       Scroll,
@@ -213,7 +218,7 @@
     position: absolute;
 
     top: 44px;
-    bottom: 0;
+    bottom: 58px;
     left: 0;
     right: 0;
   }
