@@ -14,6 +14,7 @@
       <goods-detail-comment :goods-detail-comment-info="goodsDetailCommentInfo" ref="comment"/>
       <goods-detail-recommend :goods-list="goodsDetailRecommendInfo" ref="recommend"/>
     </scroll>
+    <back-top v-show="isShowBackTop" @click.native="backTopClick"/>
   </div>
 </template>
 
@@ -32,6 +33,8 @@
   import GoodsParamInfo from "./components/GoodsParamInfo";
   import GoodsDetailComment from "./components/GoodsDetailComment";
   import GoodsDetailRecommend from "./components/GoodsDetailRecommend";
+
+  import {BackToTopMixin} from "../../common/mixin";
 
   import {debounce} from "../../common/utils";
 
@@ -57,6 +60,7 @@
         goodsDetailRecommendInfo: []
       }
     },
+    mixins: [BackToTopMixin],
     components: {
       NavigationBar,
       Tabs,
@@ -162,10 +166,13 @@
 
       // 滚动改变 tabs 的选中
       scrollViewDidScroll(position) {
+
+        this.isShowBackTop = (position.y < -1000)
+
         if (this.isScrollToRefreshTabs) {
+          const y = position.y
           // console.log(position);
           const tabs = this.$refs.detailTabs
-          const y = position.y
           let index = 0
           if (y <= this.tabsOffset.param && y > this.tabsOffset.comment) {
             index = 1

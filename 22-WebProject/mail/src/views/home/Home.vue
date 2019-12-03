@@ -34,7 +34,7 @@
   import Tabs from "../../components/content/tabs/Tabs";
   import GoodsList from "../../components/content/goods/GoodsList";
 
-  import BackTop from "../../components/content/backTop/BackTop";
+  import {BackToTopMixin} from "../../common/mixin";
 
   import {debounce} from "../../common/utils";
 
@@ -47,9 +47,9 @@
       HomeRecommendView,
       HomeFeatureView,
       Tabs,
-      GoodsList,
-      BackTop
+      GoodsList
     },
+    mixins: [BackToTopMixin],
     data() {
       return {
         // home data
@@ -69,7 +69,7 @@
           {type: 'new', page: 0, list: []},
           {type: 'sell', page: 0, list: []}
         ],
-        isShowBackTop: false,
+        // isShowBackTop: false, 使用了混入
         // 离开页面记录当前页面的滚动的距离
         currentScrollY: 0
       }
@@ -145,11 +145,11 @@
         this.$refs.tabsTop.currentIndex = index
       },
 
-      // 回到顶部的点击
-      backTopClick() {
-        // 拿到scroll组件
-        this.$refs.scroll.scrollTo(0, 0)
-      },
+      // 回到顶部的点击  使用了混入
+      // backTopClick() {
+      //   // 拿到scroll组件
+      //   this.$refs.scroll.scrollTo(0, 0)
+      // },
 
       // 滚动
       scrollViewDidScroll(position) {

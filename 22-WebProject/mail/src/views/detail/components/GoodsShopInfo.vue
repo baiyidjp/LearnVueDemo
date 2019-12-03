@@ -151,23 +151,23 @@
   }
 
   .desc-score {
-    color: #5ea732;
+    color: #f13e3a;
     font-size: 12px;
     margin: 0 15px;
   }
 
   .desc-lv {
-    background-color: #5ea732;
+    background-color: #f13e3a;
     color: white;
     font-size: 12px;
   }
 
   .score-better {
-    background-color: #f13e3a;
+    background-color: #5ea732;
   }
 
   .desc-better {
-    color: #f13e3a;
+    color: #5ea732;
   }
 
   .enter-shop {
