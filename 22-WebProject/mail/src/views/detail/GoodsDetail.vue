@@ -211,7 +211,7 @@
         // this.$store.commit('addCartClick', goodsInfo)
         // 使用actions处理逻辑 返回 promise
         this.$store.dispatch(mutations_types.a_AddCartClick, goodsInfo).then(toast => {
-          console.log(toast);
+          this.$toast(toast)
         })
       }
     }
