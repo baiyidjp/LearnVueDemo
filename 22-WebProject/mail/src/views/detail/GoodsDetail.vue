@@ -15,7 +15,7 @@
       <goods-detail-recommend :goods-list="goodsDetailRecommendInfo" ref="recommend"/>
     </scroll>
     <back-top v-show="isShowBackTop" @click.native="backTopClick"/>
-    <goods-detail-bottom/>
+    <goods-detail-bottom @addCartClick="addCartClick"/>
   </div>
 </template>
 
@@ -39,6 +39,7 @@
 
   import {BackToTopMixin} from "../../common/mixin";
 
+  import mutations_types from "../../store/mutations_types";
   import {debounce} from "../../common/utils";
 
   export default {
@@ -195,6 +196,23 @@
       scrollViewDidScrollEnd() {
         // console.log(position);
         this.isScrollToRefreshTabs = true
+      },
+
+      // 点击加入购物车
+      addCartClick() {
+
+        const goodsInfo = {}
+        goodsInfo.iid = this.iid
+        goodsInfo.title = this.goodsInfo.title
+        goodsInfo.desc = this.goodsInfo.desc
+        goodsInfo.price = this.goodsInfo.price
+        goodsInfo.image = this.banner[0]
+
+        // this.$store.commit('addCartClick', goodsInfo)
+        // 使用actions处理逻辑 返回 promise
+        this.$store.dispatch(mutations_types.a_AddCartClick, goodsInfo).then(toast => {
+          console.log(toast);
+        })
       }
     }
   }
