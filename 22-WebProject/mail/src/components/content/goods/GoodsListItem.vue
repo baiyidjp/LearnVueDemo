@@ -28,12 +28,16 @@
         this.$bus.$emit('imageLoadDone')
       },
       goodsItemClick() {
-        this.$router.push({
-          path: '/detail',
-          query: {
-            iid: this.isHome ? this.goods.iid : this.goods.item_id
-          }
-        })
+        if (this.isHome) {
+          this.$router.push({
+            path: '/detail',
+            query: {
+              iid: this.goods.iid
+            }
+          })
+        } else {
+          this.$bus.$emit('goodsItemClick', {iid: this.goods.item_id})
+        }
       }
     },
     mounted() {

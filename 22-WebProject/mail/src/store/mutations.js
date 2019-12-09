@@ -10,6 +10,9 @@ export default {
 
   [mutations_types.m_GoodsAddCount](state, payload) {
     payload.count += 1
+  },
+  [mutations_types.m_GoodsSubCount](state, payload) {
+    payload.count -= 1
   }
   // addCartClick(state, payload) {
   //   // 查询数组中是否包含当前的商品

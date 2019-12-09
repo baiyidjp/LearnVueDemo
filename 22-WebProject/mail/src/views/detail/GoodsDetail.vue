@@ -96,6 +96,18 @@
         // 使用防抖函数 限制刷新频率
         refresh()
       })
+
+      // 监听推荐商品的点击 服务器不存在数据
+      this.$bus.$on('goodsItemClick', (query) => {
+        // 记录商品id
+        this.iid = query.iid
+        // 获取商品详情
+        this.getGoodsDetail()
+        // 获取推荐的商品
+        this.getGoodsDetailRecommend()
+        // 滚动到顶部
+        this.backTopClick()
+      })
     },
     methods: {
 
@@ -122,8 +134,9 @@
         const info = {}
         info.title = result.itemInfo.title
         info.desc = result.itemInfo.desc
-        info.price = result.itemInfo.price
-        info.oldPrice = result.itemInfo.oldPrice
+        info.showPrice = result.itemInfo.price.split('~').length > 0 ? result.itemInfo.price.split('~')[0] : result.itemInfo.price
+            info.oldPrice = result.itemInfo.oldPrice
+        info.price = parseFloat(result.itemInfo.lowNowPrice)
         info.columns = result.columns
         info.services = result.shopInfo.services.filter(service => { return Object.keys(service).length === 2 })
         return info
@@ -206,6 +219,7 @@
         goodsInfo.title = this.goodsInfo.title
         goodsInfo.desc = this.goodsInfo.desc
         goodsInfo.price = this.goodsInfo.price
+        goodsInfo.showPrice = this.goodsInfo.showPrice
         goodsInfo.image = this.banner[0]
 
         // this.$store.commit('addCartClick', goodsInfo)
@@ -223,7 +237,7 @@
   #goods-detail {
     height: 100vh;
     position: relative;
-    z-index: 999;
+    z-index: 9;
     background-color: #fff;
   }
 

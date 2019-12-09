@@ -2,7 +2,7 @@
   <div class="goods-info">
     <div class="goods-title">{{ goodsInfo.title }}</div>
     <div class="price-container">
-      <div class="now-price">{{ goodsInfo.price }}</div>
+      <div class="now-price">{{ goodsInfo.showPrice }}</div>
       <div class="old-price">{{ goodsInfo.oldPrice }}</div>
       <div class="discount">优惠价</div>
     </div>
